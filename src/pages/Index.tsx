@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, Trophy, Users, ShoppingBag, ChevronDown, Menu, X } from 'lucide-react';
+import { Star, Trophy, Users, ChevronDown, Menu, X, Youtube, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { useState } from 'react';
 
 const Index = () => {
@@ -53,12 +52,6 @@ const Index = () => {
             >
               Fans
             </button>
-            <button 
-              onClick={() => scrollToSection('tienda')}
-              className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors"
-            >
-              Tienda
-            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -96,15 +89,9 @@ const Index = () => {
             </button>
             <button 
               onClick={() => scrollToSection('fans')}
-              className="block w-full text-left px-6 py-4 border-b border-gray-700 hover:bg-gray-800 text-white"
-            >
-              Fans
-            </button>
-            <button 
-              onClick={() => scrollToSection('tienda')}
               className="block w-full text-left px-6 py-4 hover:bg-gray-800 text-white"
             >
-              Tienda
+              Fans
             </button>
           </div>
         )}
@@ -132,6 +119,67 @@ const Index = () => {
           >
             Conoce mi historia
           </Button>
+          
+          {/* Social Media Links */}
+          <div className="mt-8 flex justify-center space-x-6">
+            <a 
+              href="#" 
+              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-6 h-6" />
+            </a>
+            <a 
+              href="#" 
+              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a 
+              href="#" 
+              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110"
+              aria-label="Facebook"
+            >
+              <Facebook className="w-6 h-6" />
+            </a>
+            <a 
+              href="https://www.youtube.com/watch?v=4XJFU3kNrDA" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110"
+              aria-label="YouTube"
+            >
+              <Youtube className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* YouTube Section */}
+      <section className="py-20 bg-gray-800 text-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Últimos Highlights</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Revive los mejores momentos de mi carrera y mantente al día con mi contenido más reciente.
+            </p>
+          </div>
+          
+          <div className="flex justify-center">
+            <div className="w-full max-w-4xl">
+              <div className="relative aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/4XJFU3kNrDA"
+                  title="Denis Vela - Highlights"
+                  className="absolute inset-0 w-full h-full rounded-lg"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -280,47 +328,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Tienda Section */}
-      <section id="tienda" className="py-20 bg-white text-gray-900">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Tienda Oficial</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Lleva contigo un pedazo de la pasión y el espíritu deportivo con nuestra línea oficial de productos.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { name: "Camiseta Oficial", price: "$89.99", category: "Ropa" },
-              { name: "Balón Autografiado", price: "$159.99", category: "Coleccionables" },
-              { name: "Gorra Deportiva", price: "$34.99", category: "Accesorios" },
-              { name: "Poster Firmado", price: "$49.99", category: "Memorabilia" }
-            ].map((product, index) => (
-              <Card key={index} className="p-4 hover:shadow-lg transition-shadow">
-                <CardContent>
-                  <div className="h-48 bg-gradient-to-br from-green-100 to-blue-100 rounded-lg mb-4 flex items-center justify-center">
-                    <ShoppingBag className="w-16 h-16 text-gray-400" />
-                  </div>
-                  <Badge className="mb-2 bg-gray-100 text-gray-800">{product.category}</Badge>
-                  <h3 className="font-bold text-lg mb-2">{product.name}</h3>
-                  <p className="text-2xl font-bold text-green-600 mb-4">{product.price}</p>
-                  <Button className="w-full bg-green-600 hover:bg-green-700">
-                    Comprar Ahora
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
-              Ver Toda la Tienda
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -332,10 +339,13 @@ const Index = () => {
                 Instagram
               </Button>
               <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
-                Twitter
+                LinkedIn
               </Button>
               <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
                 Facebook
+              </Button>
+              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                YouTube
               </Button>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-800 text-gray-400 text-sm">
