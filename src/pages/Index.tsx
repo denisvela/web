@@ -18,171 +18,128 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50">
+    <div className="min-h-screen bg-gray-900 text-white">
       {/* Navigation Bar */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b shadow-sm z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <div className="flex items-center">
-              <div className="text-2xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-                Denis Vela
-              </div>
-            </div>
-
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
-              <button 
-                onClick={() => scrollToSection('inicio')}
-                className="text-gray-700 hover:text-green-600 font-medium transition-colors"
-              >
-                Inicio
-              </button>
-              <button 
-                onClick={() => scrollToSection('beyond')}
-                className="text-gray-700 hover:text-green-600 font-medium transition-colors"
-              >
-                Beyond
-              </button>
-              <button 
-                onClick={() => scrollToSection('historia')}
-                className="text-gray-700 hover:text-green-600 font-medium transition-colors"
-              >
-                Historia
-              </button>
-              <button 
-                onClick={() => scrollToSection('fans')}
-                className="text-gray-700 hover:text-green-600 font-medium transition-colors"
-              >
-                Fans
-              </button>
-              <button 
-                onClick={() => scrollToSection('tienda')}
-                className="text-gray-700 hover:text-green-600 font-medium transition-colors"
-              >
-                Tienda
-              </button>
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 hover:text-green-600"
-              >
-                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
+      <nav className="fixed top-0 w-full bg-transparent z-50">
+        <div className="flex items-center justify-between px-6 py-4 lg:px-12">
+          {/* Logo D10 */}
+          <div className="text-2xl font-bold tracking-widest uppercase">
+            D10⚽
           </div>
 
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
-                <button 
-                  onClick={() => scrollToSection('inicio')}
-                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md"
-                >
-                  Inicio
-                </button>
-                <button 
-                  onClick={() => scrollToSection('beyond')}
-                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md"
-                >
-                  Beyond
-                </button>
-                <button 
-                  onClick={() => scrollToSection('historia')}
-                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md"
-                >
-                  Historia
-                </button>
-                <button 
-                  onClick={() => scrollToSection('fans')}
-                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md"
-                >
-                  Fans
-                </button>
-                <button 
-                  onClick={() => scrollToSection('tienda')}
-                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md"
-                >
-                  Tienda
-                </button>
-              </div>
-            </div>
-          )}
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            <button 
+              onClick={() => scrollToSection('inicio')}
+              className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors"
+            >
+              Inicio
+            </button>
+            <button 
+              onClick={() => scrollToSection('beyond')}
+              className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors"
+            >
+              Beyond
+            </button>
+            <button 
+              onClick={() => scrollToSection('historia')}
+              className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors"
+            >
+              Historia
+            </button>
+            <button 
+              onClick={() => scrollToSection('fans')}
+              className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors"
+            >
+              Fans
+            </button>
+            <button 
+              onClick={() => scrollToSection('tienda')}
+              className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors"
+            >
+              Tienda
+            </button>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white hover:text-gray-300"
+              aria-label="Menú"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden absolute inset-x-0 top-full bg-gray-900/90 backdrop-blur-md">
+            <button 
+              onClick={() => scrollToSection('inicio')}
+              className="block w-full text-left px-6 py-4 border-b border-gray-700 hover:bg-gray-800 text-white"
+            >
+              Inicio
+            </button>
+            <button 
+              onClick={() => scrollToSection('beyond')}
+              className="block w-full text-left px-6 py-4 border-b border-gray-700 hover:bg-gray-800 text-white"
+            >
+              Beyond
+            </button>
+            <button 
+              onClick={() => scrollToSection('historia')}
+              className="block w-full text-left px-6 py-4 border-b border-gray-700 hover:bg-gray-800 text-white"
+            >
+              Historia
+            </button>
+            <button 
+              onClick={() => scrollToSection('fans')}
+              className="block w-full text-left px-6 py-4 border-b border-gray-700 hover:bg-gray-800 text-white"
+            >
+              Fans
+            </button>
+            <button 
+              onClick={() => scrollToSection('tienda')}
+              className="block w-full text-left px-6 py-4 hover:bg-gray-800 text-white"
+            >
+              Tienda
+            </button>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section - Inicio */}
-      <section id="inicio" className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <Badge className="mb-4 bg-green-100 text-green-800 border-green-200">
-              Pro Football Player
-            </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-              Denis 
-              <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-                {" "}Vela
-              </span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Jugador profesional de fútbol dedicado a la excelencia, la pasión y el compromiso. 
-              Descubre mi historia, mis logros y únete a mi comunidad de fanáticos.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
-                onClick={() => scrollToSection('historia')}
-              >
-                Conoce mi Historia
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-green-600 text-green-600 hover:bg-green-50 px-8 py-3"
-                onClick={() => scrollToSection('fans')}
-              >
-                Únete a los Fans
-              </Button>
-            </div>
-          </div>
-
-          {/* Stats Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent>
-                <Trophy className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">15+</h3>
-                <p className="text-gray-600">Trofeos Ganados</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent>
-                <Star className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">50+</h3>
-                <p className="text-gray-600">Goles en Carrera</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
-              <CardContent>
-                <Users className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-                <h3 className="text-3xl font-bold text-gray-900 mb-2">10K+</h3>
-                <p className="text-gray-600">Seguidores</p>
-              </CardContent>
-            </Card>
-          </div>
+      <section 
+        id="inicio" 
+        className="relative flex h-screen items-center justify-center text-center"
+        style={{
+          background: "url('https://scontent.fbts7-1.fna.fbcdn.net/v/t39.30808-6/499373749_1115437377295704_5121590539011153473_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mUEQkp4GvewQ7kNvwEAElkS&_nc_oc=AdlzqbzoJOQAHSvBBVZGDGmEdod-DG2cL4j2G_CRY8pF8m_m_PurKBBpjYQIzqFP-r8&_nc_zt=23&_nc_ht=scontent.fbts7-1.fna&_nc_gid=x9Yio9R_wXIfX02HmOlQ5A&oh=00_AfLMOdvqqcjwan6R0PsKnzydfsONhQqt4M4dCS_wjvNz3A&oe=683A82CC') center/cover no-repeat"
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 max-w-4xl px-6">
+          <h1 className="text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
+            Denis Vela
+          </h1>
+          <p className="mt-4 text-lg sm:text-xl lg:text-2xl text-gray-200">
+            Futbolista Profesional &mdash; Extremo Dr | Club Libre
+          </p>
+          <Button
+            onClick={() => scrollToSection('beyond')}
+            className="mt-8 rounded-2xl bg-red-600 px-8 py-3 text-base font-semibold uppercase tracking-widest hover:bg-red-700"
+          >
+            Conoce mi historia
+          </Button>
         </div>
       </section>
 
       {/* Beyond Section */}
-      <section id="beyond" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="beyond" className="py-20 bg-gray-100 text-gray-900">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Beyond the Field</h2>
+            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Beyond the Field</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Más que un jugador, soy una persona comprometida con causas sociales, 
               el desarrollo comunitario y la inspiración de las nuevas generaciones.
@@ -221,10 +178,10 @@ const Index = () => {
       </section>
 
       {/* Historia Section */}
-      <section id="historia" className="py-20 bg-gradient-to-r from-green-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="historia" className="py-20 bg-white text-gray-900">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Mi Historia</h2>
+            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Mi Historia</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Un viaje desde los barrios humildes hasta los estadios más importantes del mundo.
             </p>
@@ -271,10 +228,10 @@ const Index = () => {
       </section>
 
       {/* Fans Section */}
-      <section id="fans" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="fans" className="py-20 bg-gray-100 text-gray-900">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Comunidad de Fans</h2>
+            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Comunidad de Fans</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Únete a una comunidad apasionada que comparte el amor por el fútbol y los valores deportivos.
             </p>
@@ -324,10 +281,10 @@ const Index = () => {
       </section>
 
       {/* Tienda Section */}
-      <section id="tienda" className="py-20 bg-gradient-to-r from-gray-50 to-green-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="tienda" className="py-20 bg-white text-gray-900">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Tienda Oficial</h2>
+            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Tienda Oficial</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Lleva contigo un pedazo de la pasión y el espíritu deportivo con nuestra línea oficial de productos.
             </p>
