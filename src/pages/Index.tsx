@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -330,6 +328,49 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Sponsors Section */}
+      <section className="py-20 bg-white text-gray-900">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Sponsors</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Orgulloso de contar con el apoyo de estas prestigiosas marcas que confían en mi carrera profesional.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center">
+            <div className="flex justify-center">
+              <img 
+                src="https://www.grandhotelsole.sk/uploads/base/grand-hotel-sole-nitra-slovakia-logo.svg" 
+                alt="Grand Hotel Sole" 
+                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/f3ae590a-357e-4818-ab48-ca60b7c7c500._CR0%2C0%2C3000%2C600_SX1500_.jpg" 
+                alt="Amazon" 
+                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://mecaluxes.cdnwm.com/clientes/decathlon-logo.2.7.jpg?imdensity=1" 
+                alt="Decathlon" 
+                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/ca/thumb/2/2c/Logotip_UB.svg/1200px-Logotip_UB.svg.png" 
+                alt="Universitat de Barcelona" 
+                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -369,4 +410,3 @@ const Index = () => {
 };
 
 export default Index;
-
