@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -103,7 +104,7 @@ const Index = () => {
         id="inicio" 
         className="relative flex h-screen items-center justify-center text-center"
         style={{
-          background: "url('https://scontent.fbts7-1.fna.fbcdn.net/v/t39.30808-6/499353406_1114817917357650_3253935729701074506_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Hj__1Lb73FgQ7kNvwFo_Fwj&_nc_oc=AdlePxHEOw0hfTYwdj4GBz8yG_RZrm1Q5LQ1S6xNMWqrj8YP-vXDabyT7WKr9OOQJbw&_nc_zt=23&_nc_ht=scontent.fbts7-1.fna&_nc_gid=ARx9fAGvHb6WKBXfE45Uv9H&oh=00_AfAHwJzNhZTRovJTrYI1oKW0rB86LzA0kJVj0K1rV7vhfA&oe=683A82E0') center/cover no-repeat"
+          background: "url('https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/467553662_977425757763534_5921363224878748512_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lneuUP4uw0kQ7kNvwF4FSFF&_nc_oc=AdmPayt2S5iOKS7KNeNJ1To3VFVL9xSsxUtdhliEB1NtvZa2VBbReKl1yORYpt16_1A&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=vB4tE_gt51yjM0QB-TMntA&oh=00_AfK0XUAyBfcffa_bQ1bUE8rUOX2Oci_IJeHnP6qxXNgyug&oe=68464DF1') center/cover no-repeat"
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
@@ -368,3 +369,4 @@ const Index = () => {
 };
 
 export default Index;
+
