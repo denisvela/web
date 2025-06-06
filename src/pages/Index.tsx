@@ -23,7 +23,7 @@ const Index = () => {
         <div className="flex items-center justify-between px-6 py-4 lg:px-12">
           {/* Logo D10 */}
           <div className="text-2xl font-bold tracking-widest uppercase">
-            D10⚽
+            Denis Vela
           </div>
 
           {/* Desktop Navigation */}
@@ -111,8 +111,10 @@ const Index = () => {
             Denis Vela
           </h1>
           <p className="mt-4 text-lg sm:text-xl lg:text-2xl text-gray-200">
-            Futbolista Profesional &mdash; Extremo Dr | Club Libre
+            Denis Vela
           </p>
+          
+          {/* Social Media Links */}
           <Button
             onClick={() => scrollToSection('beyond')}
             className="mt-8 rounded-2xl bg-red-600 px-8 py-3 text-base font-semibold uppercase tracking-widest hover:bg-red-700"
