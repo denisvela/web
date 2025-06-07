@@ -356,7 +356,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 items-center">
+          <div className="grid grid-cols-2 lg:grid-cols-7 gap-8 items-center">
             <div className="flex justify-center">
               <img 
                 src="https://www.grandhotelsole.sk/uploads/base/grand-hotel-sole-nitra-slovakia-logo.svg" 
@@ -389,6 +389,20 @@ const Index = () => {
               <img 
                 src="https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/504190565_1128088222697286_2196400931264221023_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=94e2a3&_nc_ohc=Ip1aTdcAKWQQ7kNvwEO1QwJ&_nc_oc=Adl6oHjJAyxqR150PqcLcqRL_yK8uY5a-vDqfsYh2SduvJJrJvraeawEBTyQuExUylo&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=Broz7oYrfSt1x95MpsBk-g&oh=00_AfOzqpZxdqZb0ydCMRM8-a6reDCFLofEp88kCfB1WCswvQ&oe=68494A6F" 
                 alt="Sponsor" 
+                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://brandlogos.net/wp-content/uploads/2023/12/coppel-logo_brandlogos.net_21m2l.png" 
+                alt="Coppel" 
+                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://cdn.worldvectorlogo.com/logos/g-shock-casio.svg" 
+                alt="G-Shock Casio" 
                 className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
