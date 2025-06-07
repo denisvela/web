@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -361,49 +362,49 @@ const Index = () => {
               <img 
                 src="https://www.grandhotelsole.sk/uploads/base/grand-hotel-sole-nitra-slovakia-logo.svg" 
                 alt="Grand Hotel Sole" 
-                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/f3ae590a-357e-4818-ab48-ca60b7c7c500._CR0%2C0%2C3000%2C600_SX1500_.jpg" 
                 alt="Amazon" 
-                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://mecaluxes.cdnwm.com/clientes/decathlon-logo.2.7.jpg?imdensity=1" 
                 alt="Decathlon" 
-                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://upload.wikimedia.org/wikipedia/ca/thumb/2/2c/Logotip_UB.svg/1200px-Logotip_UB.svg.png" 
                 alt="Universitat de Barcelona" 
-                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/504190565_1128088222697286_2196400931264221023_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=94e2a3&_nc_ohc=Ip1aTdcAKWQQ7kNvwEO1QwJ&_nc_oc=Adl6oHjJAyxqR150PqcLcqRL_yK8uY5a-vDqfsYh2SduvJJrJvraeawEBTyQuExUylo&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=Broz7oYrfSt1x95MpsBk-g&oh=00_AfOzqpZxdqZb0ydCMRM8-a6reDCFLofEp88kCfB1WCswvQ&oe=68494A6F" 
                 alt="Sponsor" 
-                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://brandlogos.net/wp-content/uploads/2023/12/coppel-logo_brandlogos.net_21m2l.png" 
                 alt="Coppel" 
-                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://cdn.worldvectorlogo.com/logos/g-shock-casio.svg" 
                 alt="G-Shock Casio" 
-                className="h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           </div>
