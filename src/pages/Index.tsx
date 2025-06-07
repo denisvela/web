@@ -119,7 +119,7 @@ const Index = () => {
             onClick={() => scrollToSection('beyond')}
             className="mt-8 rounded-2xl bg-red-600 px-8 py-3 text-base font-semibold uppercase tracking-widest hover:bg-red-700"
           >
-            Conoce mi historia
+            Más allá...
           </Button>
           
           {/* Social Media Links */}
@@ -195,7 +195,10 @@ const Index = () => {
       <section id="beyond" className="py-20 bg-gray-100 text-gray-900">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Más allá...</h2>
+            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent relative">
+              Más allá...
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 rounded-full mx-auto w-24"></div>
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Más que un jugador, soy una persona comprometida con causas sociales, 
               el desarrollo comunitario y la inspiración de las nuevas generaciones.
@@ -237,7 +240,10 @@ const Index = () => {
       <section id="historia" className="py-20 bg-white text-gray-900">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Mi Historia</h2>
+            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent relative">
+              Mi Historia
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 rounded-full mx-auto w-24"></div>
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Un viaje desde los barrios humildes hasta los estadios más importantes del mundo.
             </p>
@@ -287,7 +293,10 @@ const Index = () => {
       <section id="fans" className="py-20 bg-gray-100 text-gray-900">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Comunidad de Fans</h2>
+            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-clip-text text-transparent relative">
+              Comunidad de Fans
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 rounded-full mx-auto w-24"></div>
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Únete a una comunidad apasionada que comparte el amor por el fútbol y los valores deportivos.
             </p>
@@ -304,33 +313,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <CardContent>
-                <Users className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Fan Club Oficial</h3>
-                <p className="text-gray-600 mb-4">
-                  Acceso exclusivo a contenido, eventos especiales y encuentros con el jugador.
-                </p>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Únete Ahora
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <CardContent>
-                <Star className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Experiencias VIP</h3>
-                <p className="text-gray-600 mb-4">
-                  Vive momentos únicos con acceso a entrenamientos y eventos exclusivos.
-                </p>
-                <Button className="w-full bg-yellow-600 hover:bg-yellow-700">
-                  Conoce Más
-                </Button>
-              </CardContent>
-            </Card>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="p-6 text-center hover:shadow-lg transition-shadow">
               <CardContent>
                 <Trophy className="w-12 h-12 text-green-500 mx-auto mb-4" />
@@ -343,6 +326,19 @@ const Index = () => {
                 </Button>
               </CardContent>
             </Card>
+
+            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <CardContent>
+                <Star className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">Eventos</h3>
+                <p className="text-gray-600 mb-4">
+                  Únete a eventos exclusivos y experiencias únicas con Denis Vela.
+                </p>
+                <Button className="w-full bg-yellow-600 hover:bg-yellow-700">
+                  Ver Eventos
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -351,7 +347,10 @@ const Index = () => {
       <section className="py-20 bg-white text-gray-900">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Sponsors</h2>
+            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-indigo-600 via-pink-600 to-red-600 bg-clip-text text-transparent relative">
+              Sponsors
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-indigo-600 via-pink-600 to-red-600 rounded-full mx-auto w-24"></div>
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Orgulloso de contar con el apoyo de estas prestigiosas marcas que confían en mi carrera profesional.
             </p>
