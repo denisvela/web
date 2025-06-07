@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -112,7 +111,7 @@ const Index = () => {
             Denis Vela
           </h1>
           <p className="mt-4 text-lg sm:text-xl lg:text-2xl text-gray-200">
-            Denis Vela
+            Más allá...
           </p>
           
           {/* Social Media Links */}
