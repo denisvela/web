@@ -71,10 +71,8 @@ const Index = () => {
     }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 max-w-4xl px-6">
-          <h1 className="text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
-            Denis Vela
-          </h1>
-          <p className="mt-4 text-lg sm:text-xl lg:text-2xl text-gray-200">
+          
+          <p className="mt-4 text-lg sm:text-xl text-amber-400 font-light lg:text-5xl">
             Más allá...
           </p>
           
@@ -169,12 +167,12 @@ const Index = () => {
       {/* Historia Section */}
       <section id="historia" className="py-20 bg-white text-gray-900">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 bg-gray-950">
             <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent relative">
               Mi Historia
               <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 rounded-full mx-auto w-24"></div>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-zinc-50">
               Un viaje desde los barrios humildes hasta los estadios más importantes del mundo.
             </p>
           </div>
@@ -271,18 +269,18 @@ const Index = () => {
 
       {/* Sponsors Section */}
       <section className="py-20 bg-white text-gray-900">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-16">
+        <div className="max-w-5xl mx-auto px-6 bg-green-800">
+          <div className="text-center mb-16 bg-zinc-950">
             <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-indigo-600 via-pink-600 to-red-600 bg-clip-text text-transparent relative">
               Sponsors
               <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-indigo-600 via-pink-600 to-red-600 rounded-full mx-auto w-24"></div>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-zinc-50">
               Orgulloso de contar con el apoyo de estas prestigiosas marcas que confían en mi carrera profesional.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-7 gap-8 items-center my-[26px]">
+          <div className="grid grid-cols-2 lg:grid-cols-7 gap-8 items-center my-[51px]">
             <div className="flex justify-center">
               <img src="https://www.grandhotelsole.sk/uploads/base/grand-hotel-sole-nitra-slovakia-logo.svg" alt="Grand Hotel Sole" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
@@ -302,7 +300,7 @@ const Index = () => {
               <img src="https://brandlogos.net/wp-content/uploads/2023/12/coppel-logo_brandlogos.net_21m2l.png" alt="Coppel" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
             <div className="flex justify-center">
-              <img alt="G-Shock Casio" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" src="/lovable-uploads/42a81b6c-a912-42b4-a5d1-749a90961ce4.png" />
+              
             </div>
           </div>
         </div>
@@ -312,7 +310,7 @@ const Index = () => {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4">Denis Vela</h3>
+            
             <p className="text-gray-400 mb-6">Jugador Profesional de Fútbol</p>
             <div className="flex justify-center space-x-6">
               <a href="https://www.instagram.com/denisvela30/" target="_blank" rel="noopener noreferrer">
