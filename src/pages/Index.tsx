@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -125,28 +126,34 @@ const Index = () => {
           {/* Social Media Links */}
           <div className="mt-8 flex justify-center space-x-6">
             <a 
-              href="#" 
+              href="https://www.instagram.com/denisvela30/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110"
               aria-label="Instagram"
             >
               <Instagram className="w-6 h-6" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="#" 
+              href="https://www.facebook.com/denis.vela.568089/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110"
               aria-label="Facebook"
             >
               <Facebook className="w-6 h-6" />
             </a>
             <a 
-              href="https://www.youtube.com/watch?v=4XJFU3kNrDA" 
+              href="https://www.youtube.com/watch?v=c-Oo6x-V9CA" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110"
@@ -189,7 +196,7 @@ const Index = () => {
       <section id="beyond" className="py-20 bg-gray-100 text-gray-900">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Beyond the Field</h2>
+            <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Más allá...</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Más que un jugador, soy una persona comprometida con causas sociales, 
               el desarrollo comunitario y la inspiración de las nuevas generaciones.
@@ -285,6 +292,17 @@ const Index = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Únete a una comunidad apasionada que comparte el amor por el fútbol y los valores deportivos.
             </p>
+          </div>
+
+          {/* Fan Community Image */}
+          <div className="mb-12 flex justify-center">
+            <div className="w-full max-w-2xl">
+              <img 
+                src="https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/499732034_1118749313631177_1066404946131252977_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TPrHLC4CuQIQ7kNvwEzt2Id&_nc_oc=AdkF-g6w8ZX6PARu5p4_KWHy5fJmWOW-rVnLqVg694Vun9gwJQUKqtD8vNG6AsM6BIM&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=1G0eiKNL56w-Yn81fnmJqw&oh=00_AfNslc77d6_A9u1e8pqmUkECI-mOAocGjx_43dwnrpIvig&oe=684954FC" 
+                alt="Comunidad de Fans Denis Vela" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -387,18 +405,42 @@ const Index = () => {
             <h3 className="text-2xl font-bold mb-4">Denis Vela</h3>
             <p className="text-gray-400 mb-6">Jugador Profesional de Fútbol</p>
             <div className="flex justify-center space-x-6">
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
-                Instagram
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
-                LinkedIn
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
-                Facebook
-              </Button>
-              <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
-                YouTube
-              </Button>
+              <a 
+                href="https://www.instagram.com/denisvela30/" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                  Instagram
+                </Button>
+              </a>
+              <a 
+                href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                  LinkedIn
+                </Button>
+              </a>
+              <a 
+                href="https://www.facebook.com/denis.vela.568089/" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                  Facebook
+                </Button>
+              </a>
+              <a 
+                href="https://www.youtube.com/watch?v=c-Oo6x-V9CA" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
+                  YouTube
+                </Button>
+              </a>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-800 text-gray-400 text-sm">
               © 2024 Denis Vela. Todos los derechos reservados.
