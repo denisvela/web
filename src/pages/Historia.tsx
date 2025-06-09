@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Historia = () => {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white">
+  return <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
       <div className="bg-gray-800 py-8">
         <div className="max-w-5xl mx-auto px-6">
@@ -16,9 +13,7 @@ const Historia = () => {
             <ChevronLeft className="w-4 h-4 mr-2" />
             Volver al inicio
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent">
-            Mi Historia Completa
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent">HISTORIA </h1>
           <p className="text-xl text-gray-300 mt-4">
             El viaje completo desde mis humildes inicios hasta convertirme en jugador profesional
           </p>
@@ -252,8 +247,6 @@ const Historia = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Historia;
