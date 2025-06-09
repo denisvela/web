@@ -8,6 +8,7 @@ const Navigation = () => {
 
   const navItems = [
     { path: '/', label: 'Inicio' },
+    { path: '/beyond', label: 'Beyond' },
     { path: '/historia', label: 'Historia' },
     { path: '/fans', label: 'Último partido en vivo' }
   ];
