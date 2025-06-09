@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Star, Trophy, Users, ChevronDown, Menu, X, Youtube, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const scrollToSection = (sectionId: string) => {
@@ -16,6 +17,7 @@ const Index = () => {
     }
     setIsMenuOpen(false);
   };
+
   return <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section - Inicio */}
       <section id="inicio" className="relative flex h-screen items-center justify-center text-center" style={{
@@ -104,6 +106,56 @@ const Index = () => {
                 </Link>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Clubes & Academias Section */}
+      <section className="py-20 bg-gray-900 text-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-blue-600 via-green-500 to-yellow-500 bg-clip-text text-transparent relative">
+              Clubes & Academias
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-600 via-green-500 to-yellow-500 rounded-full mx-auto w-24"></div>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Equipos que han sido parte de mi trayectoria futbolística profesional.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
+            <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="CE Sabadell" className="h-16 w-16 object-contain mb-2" />
+              <span className="text-gray-800 font-semibold text-sm text-center">CE Sabadell</span>
+            </div>
+            <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="RCD Espanyol" className="h-16 w-16 object-contain mb-2" />
+              <span className="text-gray-800 font-semibold text-sm text-center">RCD Espanyol</span>
+            </div>
+            <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="OFK Branc" className="h-16 w-16 object-contain mb-2" />
+              <span className="text-gray-800 font-semibold text-sm text-center">OFK Branc</span>
+            </div>
+            <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="FK Bucdonost" className="h-16 w-16 object-contain mb-2" />
+              <span className="text-gray-800 font-semibold text-sm text-center">FK Bucdonost</span>
+            </div>
+            <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="UDA Gramanet" className="h-16 w-16 object-contain mb-2" />
+              <span className="text-gray-800 font-semibold text-sm text-center">UDA Gramanet</span>
+            </div>
+            <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="UD Socuéllamos" className="h-16 w-16 object-contain mb-2" />
+              <span className="text-gray-800 font-semibold text-sm text-center">UD Socuéllamos</span>
+            </div>
+            <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="FTC Filakovo" className="h-16 w-16 object-contain mb-2" />
+              <span className="text-gray-800 font-semibold text-sm text-center">FTC Filakovo</span>
+            </div>
+            <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="FC Nitra" className="h-16 w-16 object-contain mb-2" />
+              <span className="text-gray-800 font-semibold text-sm text-center">FC Nitra</span>
+            </div>
           </div>
         </div>
       </section>
@@ -211,4 +263,5 @@ const Index = () => {
       </button>
     </div>;
 };
+
 export default Index;
