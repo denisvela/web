@@ -194,7 +194,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-7 gap-8 items-center my-[51px] mx-[9px]">
+          <div className="grid grid-cols-2 lg:grid-cols-7 gap-8 items-center mx-[29px] py-[14px] my-[43px] px-[16px]">
             <div className="flex justify-center">
               <img src="https://www.grandhotelsole.sk/uploads/base/grand-hotel-sole-nitra-slovakia-logo.svg" alt="Grand Hotel Sole" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
