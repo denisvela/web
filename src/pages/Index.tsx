@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Star, Trophy, Users, ChevronDown, Menu, X, Youtube, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +16,6 @@ const Index = () => {
     }
     setIsMenuOpen(false);
   };
-
   return <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section - Inicio */}
       <section id="inicio" className="relative flex h-screen items-center justify-center text-center" style={{
@@ -185,7 +183,7 @@ const Index = () => {
 
       {/* Sponsors Section */}
       <section className="py-20 bg-white text-gray-900">
-        <div className="max-w-5xl bg-green-800 px-[45px] mx-0 my-0 py-0">
+        <div className="max-w-5xl bg-zinc-50 mx-[30px] my-[28px] py-[2px] px-0">
           <div className="text-center mb-16 bg-zinc-950">
             <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-indigo-600 via-pink-600 to-red-600 bg-clip-text text-transparent relative">
               Sponsors
@@ -263,5 +261,4 @@ const Index = () => {
       </button>
     </div>;
 };
-
 export default Index;
