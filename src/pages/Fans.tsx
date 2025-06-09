@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Trophy, Calendar, ChevronLeft, Play } from 'lucide-react';
+import { Star, Trophy, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Fans = () => {
@@ -11,10 +10,6 @@ const Fans = () => {
       {/* Header */}
       <div className="bg-gray-800 py-8">
         <div className="max-w-5xl mx-auto px-6">
-          <Link to="/" className="inline-flex items-center text-gray-400 hover:text-white mb-4">
-            <ChevronLeft className="w-4 h-4 mr-2" />
-            Volver al inicio
-          </Link>
           <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider bg-gradient-to-r from-red-600 via-yellow-500 to-green-500 bg-clip-text text-transparent">
             Último Partido en Vivo
           </h1>
