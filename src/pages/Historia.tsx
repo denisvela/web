@@ -25,9 +25,44 @@ const Historia = () => {
         </div>
       </div>
 
-      {/* Timeline */}
+      {/* Trayectoria Section */}
       <div className="py-20 bg-gray-100 text-gray-900">
         <div className="max-w-5xl mx-auto px-6">
+          <Card className="p-8 mb-16">
+            <CardContent>
+              <h2 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent">
+                Trayectoria de Denis Vela
+              </h2>
+              
+              <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+                <p>
+                  Denis Vela dio sus primeros pasos en el fútbol profesional a una edad inusualmente temprana con la UD Socuéllamos. Allí, bajo la tutela y el aliento constante de su padre, fue puliendo un talento natural que ya despuntaba. Sin embargo, una grave enfermedad de un familiar y la posterior mudanza de su padre a Brasil alteraron el rumbo de su vida deportiva: Denis tuvo que regresar a su localidad natal con su madre y, sin recursos ni un club de nivel a su alcance, el balón quedó en pausa.
+                </p>
+                
+                <p>
+                  Tras un periodo de búsqueda, se incorporó al Badia del Vallès con la promesa de portar el dorsal 10 en el primer equipo. Pero un cambio de directiva al año siguiente lo relegó al banquillo de Segunda Regional. Desmotivado y con escasas posibilidades de moverse por falta de apoyo económico, decidió canalizar su energía en el Breaking, disciplina que acabaría enriqueciendo su habilidad atlética y su expresión corporal.
+                </p>
+                
+                <p>
+                  En el Breaking cosechó una trayectoria plagada de competiciones y trofeos, llegando incluso a realizar competiciones en el ámbito internacional. Aunque el baile se convirtió en una nueva pasión, nunca se desvinculó del fútbol: participó con regularidad en torneos locales y de la provincia de Barcelona para mantener vivo su instinto competitivo.
+                </p>
+                
+                <p>
+                  El punto de inflexión llegó cuando un amigo lo invitó a la Liga ADLC, un prestigioso torneo anual de fútbol 11 retransmitido para Latinoamérica y con presencia de jugadores de primer nivel. Denis participó en 14 encuentros, firmó goles memorables y alcanzó los cuartos de final. Aquel escaparate reavivó su convicción: <strong>debía regresar a las grandes ligas</strong>.
+                </p>
+                
+                <p>
+                  Se fijó entonces un reto singular y simbólico: <strong>anotar en un partido profesional y celebrar el gol con un paso de breaking</strong>, convirtiéndose en el primer futbolista en hacerlo. Esa meta, que fusiona sus dos grandes pasiones, lo motivó al máximo y marcó su retorno al fútbol profesional a los 28 años.
+                </p>
+                
+                <p>
+                  Hoy, Denis Vela continúa representando el breaking dentro del fútbol, honrando una disciplina que le ayudó a reinventarse y a potenciar facetas impensadas de su juego. Su historia es la prueba de que perseverancia y autenticidad pueden converger para crear un estilo único—dentro y fuera del terreno de juego.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Timeline */}
           <div className="space-y-16">
             
             {/* 2008 - Primeros pasos */}
@@ -154,6 +189,49 @@ const Historia = () => {
             </div>
 
           </div>
+
+          {/* Beyond Section - Moved from Index */}
+          <section className="py-20">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent relative">
+                Más allá...
+                <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 rounded-full mx-auto w-24"></div>
+              </h2>
+              <p className="text-xl text-white max-w-3xl mx-auto">
+                Más que un jugador, soy una persona comprometida con causas sociales, 
+                el desarrollo comunitario y la inspiración de las nuevas generaciones.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Impacto Social</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-4"></div>
+                    <p className="text-gray-300">Fundación para jóvenes en situación de vulnerabilidad</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-4"></div>
+                    <p className="text-gray-300">Programas de educación deportiva en comunidades rurales</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-4"></div>
+                    <p className="text-gray-300">Embajador de valores deportivos y Fair Play</p>
+                  </div>
+                </div>
+              </div>
+              <Card className="p-8 bg-gray-800 border-gray-700">
+                <CardContent>
+                  <blockquote className="text-lg italic text-gray-300 mb-4">
+                    "El fútbol me ha dado todo, y es mi responsabilidad devolver a la comunidad 
+                    lo que el deporte me ha enseñado: disciplina, trabajo en equipo y perseverancia."
+                  </blockquote>
+                  <cite className="text-green-400 font-semibold">— Denis Vela</cite>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
 
           {/* Call to action */}
           <div className="text-center mt-16">
