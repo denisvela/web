@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from 'react-router-dom';
-
 const Historia = () => {
   return <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
@@ -180,7 +179,7 @@ const Historia = () => {
           </div>
 
           {/* Beyond Section - Moved from Index */}
-          <section className="py-20">
+          <section className="py-20 bg-blue-950">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent relative">
                 Más allá...
@@ -243,5 +242,4 @@ const Historia = () => {
       </div>
     </div>;
 };
-
 export default Historia;
