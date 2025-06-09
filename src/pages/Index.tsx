@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,10 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { Star, Trophy, Users, ChevronDown, Menu, X, Youtube, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -19,9 +16,7 @@ const Index = () => {
     }
     setIsMenuOpen(false);
   };
-
-  return (
-    <div className="min-h-screen bg-gray-900 text-white">
+  return <div className="min-h-screen bg-gray-900 text-white">
       {/* Navigation Bar */}
       <nav className="fixed top-0 w-full bg-transparent z-50">
         <div className="flex items-center justify-between px-6 py-4 lg:px-12">
@@ -32,15 +27,9 @@ const Index = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('inicio')} className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors">
-              Inicio
-            </button>
-            <Link to="/historia" className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors">
-              Historia
-            </Link>
-            <Link to="/fans" className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors">
-              Ultimo partido en vivo
-            </Link>
+            
+            
+            
           </div>
 
           {/* Mobile menu button */}
@@ -52,8 +41,7 @@ const Index = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute inset-x-0 top-full bg-gray-900/90 backdrop-blur-md">
+        {isMenuOpen && <div className="md:hidden absolute inset-x-0 top-full bg-gray-900/90 backdrop-blur-md">
             <button onClick={() => scrollToSection('inicio')} className="block w-full text-left px-6 py-4 border-b border-gray-700 hover:bg-gray-800 text-white">
               Inicio
             </button>
@@ -63,14 +51,13 @@ const Index = () => {
             <Link to="/fans" className="block w-full text-left px-6 py-4 hover:bg-gray-800 text-white">
               Ultimo partido en vivo
             </Link>
-          </div>
-        )}
+          </div>}
       </nav>
 
       {/* Hero Section - Inicio */}
       <section id="inicio" className="relative flex h-screen items-center justify-center text-center" style={{
-        background: "url('https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/467553662_977425757763534_5921363224878748512_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lneuUP4uw0kQ7kNvwF4FSFF&_nc_oc=AdmPayt2S5iOKS7KNeNJ1To3VFVL9xSsxUtdhliEB1NtvZa2VBbReKl1yORYpt16_1A&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=vB4tE_gt51yjM0QB-TMntA&oh=00_AfK0XUAyBfcffa_bQ1bUE8rUOX2Oci_IJeHnP6qxXNgyug&oe=68464DF1') center/cover no-repeat"
-      }}>
+      background: "url('https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/467553662_977425757763534_5921363224878748512_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lneuUP4uw0kQ7kNvwF4FSFF&_nc_oc=AdmPayt2S5iOKS7KNeNJ1To3VFVL9xSsxUtdhliEB1NtvZa2VBbReKl1yORYpt16_1A&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=vB4tE_gt51yjM0QB-TMntA&oh=00_AfK0XUAyBfcffa_bQ1bUE8rUOX2Oci_IJeHnP6qxXNgyug&oe=68464DF1') center/cover no-repeat"
+    }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 max-w-4xl px-6">
           
@@ -116,14 +103,7 @@ const Index = () => {
           <div className="flex justify-center">
             <div className="w-full max-w-4xl">
               <div className="relative aspect-video">
-                <iframe 
-                  src="https://www.youtube.com/embed/4XJFU3kNrDA" 
-                  title="Denis Vela - Highlights" 
-                  className="absolute inset-0 w-full h-full rounded-lg" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
-                ></iframe>
+                <iframe src="https://www.youtube.com/embed/4XJFU3kNrDA" title="Denis Vela - Highlights" className="absolute inset-0 w-full h-full rounded-lg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
           </div>
@@ -183,14 +163,7 @@ const Index = () => {
           <div className="flex justify-center">
             <div className="w-full max-w-4xl">
               <div className="relative aspect-video">
-                <iframe 
-                  src="https://sportnet.sme.sk/futbalnet/z/zsfz/zapas/668fcc21b1444d2ac675ba32/videozaznam/" 
-                  title="Denis Vela - Último Partido en Vivo" 
-                  className="absolute inset-0 w-full h-full rounded-lg" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
-                ></iframe>
+                <iframe src="https://sportnet.sme.sk/futbalnet/z/zsfz/zapas/668fcc21b1444d2ac675ba32/videozaznam/" title="Denis Vela - Último Partido en Vivo" className="absolute inset-0 w-full h-full rounded-lg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
           </div>
@@ -275,8 +248,6 @@ const Index = () => {
       <button onClick={() => scrollToSection('inicio')} className="fixed bottom-8 right-8 bg-green-600 hover:bg-green-700 text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 z-40">
         <ChevronDown className="w-6 h-6 rotate-180" />
       </button>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
