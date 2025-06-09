@@ -1,11 +1,15 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, Trophy, Users, ChevronDown, Menu, X, Youtube, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -15,6 +19,7 @@ const Index = () => {
     }
     setIsMenuOpen(false);
   };
+
   return <div className="min-h-screen bg-gray-900 text-white">
       {/* Navigation Bar */}
       <nav className="fixed top-0 w-full bg-transparent z-50">
@@ -32,12 +37,12 @@ const Index = () => {
             <button onClick={() => scrollToSection('beyond')} className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors">
               Beyond
             </button>
-            <button onClick={() => scrollToSection('historia')} className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors">
+            <Link to="/historia" className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors">
               Historia
-            </button>
-            <button onClick={() => scrollToSection('fans')} className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors">
-              Fans
-            </button>
+            </Link>
+            <Link to="/fans" className="text-sm font-semibold uppercase text-white hover:text-gray-300 transition-colors">
+              Ultimo partido en vivo
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -56,12 +61,12 @@ const Index = () => {
             <button onClick={() => scrollToSection('beyond')} className="block w-full text-left px-6 py-4 border-b border-gray-700 hover:bg-gray-800 text-white">
               Beyond
             </button>
-            <button onClick={() => scrollToSection('historia')} className="block w-full text-left px-6 py-4 border-b border-gray-700 hover:bg-gray-800 text-white">
+            <Link to="/historia" className="block w-full text-left px-6 py-4 border-b border-gray-700 hover:bg-gray-800 text-white">
               Historia
-            </button>
-            <button onClick={() => scrollToSection('fans')} className="block w-full text-left px-6 py-4 hover:bg-gray-800 text-white">
-              Fans
-            </button>
+            </Link>
+            <Link to="/fans" className="block w-full text-left px-6 py-4 hover:bg-gray-800 text-white">
+              Ultimo partido en vivo
+            </Link>
           </div>}
       </nav>
 
@@ -164,7 +169,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Historia Section */}
+      {/* Historia Section - Resumen */}
       <section id="historia" className="py-20 bg-white text-gray-900">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16 bg-gray-950">
@@ -177,92 +182,56 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="space-y-12">
-            <div className="flex flex-col lg:flex-row items-center gap-8">
-              <div className="lg:w-1/2">
-                <Card className="p-6">
-                  <CardContent>
-                    <Badge className="mb-4 bg-blue-100 text-blue-800">2010 - Inicios</Badge>
-                    <h3 className="text-2xl font-bold mb-4">Los Primeros Pasos</h3>
-                    <p className="text-gray-600">
-                      Comenzé jugando en las calles de mi barrio, con una pelota hecha de trapos 
-                      y el sueño de algún día llegar a ser profesional. Mi familia siempre creyó en mí.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className="lg:w-1/2 h-64 bg-gradient-to-br from-green-200 to-blue-200 rounded-lg flex items-center justify-center">
-                <p className="text-gray-600 text-center">Imagen: Primeros pasos en el fútbol</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-8">
-              <div className="lg:w-1/2">
-                <Card className="p-6">
-                  <CardContent>
-                    <Badge className="mb-4 bg-green-100 text-green-800">2015 - Profesional</Badge>
-                    <h3 className="text-2xl font-bold mb-4">El Salto al Profesionalismo</h3>
-                    <p className="text-gray-600">
-                      Mi debut profesional marcó el inicio de una carrera llena de desafíos, 
-                      victorias y aprendizajes que me han convertido en el jugador que soy hoy.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className="lg:w-1/2 h-64 bg-gradient-to-br from-yellow-200 to-green-200 rounded-lg flex items-center justify-center">
-                <p className="text-gray-600 text-center">Imagen: Debut profesional</p>
-              </div>
-            </div>
+          <div className="text-center">
+            <Card className="p-8 max-w-4xl mx-auto">
+              <CardContent>
+                <h3 className="text-2xl font-bold mb-6">Resumen de mi carrera</h3>
+                <p className="text-gray-600 text-lg mb-4">
+                  Desde mis inicios en las calles de mi barrio con una pelota hecha de trapos, 
+                  hasta llegar a ser jugador profesional, mi historia es de perseverancia, 
+                  dedicación y el apoyo incondicional de mi familia.
+                </p>
+                <p className="text-gray-600 text-lg mb-6">
+                  Cada paso de mi carrera ha sido una lección, cada desafío una oportunidad 
+                  de crecimiento que me ha convertido en el jugador que soy hoy.
+                </p>
+                <Link to="/historia">
+                  <Button className="bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-700 hover:to-red-700 text-white px-8 py-3">
+                    Ver Historia Completa
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Fans Section */}
-      <section id="fans" className="py-20 bg-gray-100 text-gray-900">
+      {/* Último Partido Section */}
+      <section className="py-20 bg-gray-800 text-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-clip-text text-transparent relative">
-              Comunidad de Fans
-              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 rounded-full mx-auto w-24"></div>
+            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-red-600 via-yellow-500 to-green-500 bg-clip-text text-transparent relative">
+              Último Partido en Vivo
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-red-600 via-yellow-500 to-green-500 rounded-full mx-auto w-24"></div>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Únete a una comunidad apasionada que comparte el amor por el fútbol y los valores deportivos.
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Revive la emoción de mi último partido en vivo.
             </p>
           </div>
-
-          {/* Fan Community Image */}
-          <div className="mb-12 flex justify-center">
-            <div className="w-full max-w-2xl my-0 py-0 mx-[89px] px-[181px]">
-              <img src="https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/499732034_1118749313631177_1066404946131252977_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TPrHLC4CuQIQ7kNvwEzt2Id&_nc_oc=AdkF-g6w8ZX6PARu5p4_KWHy5fJmWOW-rVnLqVg694Vun9gwJQUKqtD8vNG6AsM6BIM&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=1G0eiKNL56w-Yn81fnmJqw&oh=00_AfNslc77d6_A9u1e8pqmUkECI-mOAocGjx_43dwnrpIvig&oe=684954FC" alt="Comunidad de Fans Denis Vela" className="w-full h-auto rounded-lg shadow-lg object-contain" />
+          
+          <div className="flex justify-center">
+            <div className="w-full max-w-4xl">
+              <div className="relative aspect-video">
+                <iframe 
+                  src="https://sportnet.sme.sk/futbalnet/z/zsfz/zapas/668fcc21b1444d2ac675ba32/videozaznam/" 
+                  title="Denis Vela - Último Partido en Vivo" 
+                  className="absolute inset-0 w-full h-full rounded-lg" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen>
+                </iframe>
+              </div>
             </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <CardContent>
-                <Trophy className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Competencias</h3>
-                <p className="text-gray-600 mb-4">
-                  Participa en torneos y actividades organizadas por la comunidad de fans.
-                </p>
-                <Button className="w-full bg-green-600 hover:bg-green-700">
-                  Participar
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-              <CardContent>
-                <Star className="w-12 h-12 text-yellow-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Eventos</h3>
-                <p className="text-gray-600 mb-4">
-                  Únete a eventos exclusivos y experiencias únicas con Denis Vela.
-                </p>
-                <Button className="w-full bg-yellow-600 hover:bg-yellow-700">
-                  Ver Eventos
-                </Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -300,7 +269,7 @@ const Index = () => {
               <img src="https://brandlogos.net/wp-content/uploads/2023/12/coppel-logo_brandlogos.net_21m2l.png" alt="Coppel" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
             <div className="flex justify-center">
-              
+              <img src="https://cdn.worldvectorlogo.com/logos/g-shock-casio.svg" alt="G-Shock Casio" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
           </div>
         </div>
@@ -347,4 +316,5 @@ const Index = () => {
       </button>
     </div>;
 };
+
 export default Index;
