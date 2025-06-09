@@ -25,9 +25,7 @@ const Historia = () => {
         <div className="max-w-5xl mx-auto px-6">
           <Card className="p-8 mb-16">
             <CardContent>
-              <h2 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent">
-                Trayectoria de Denis Vela
-              </h2>
+              <h2 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent px-[10px] mx-[7px] my-[45px] py-[15px]">Trayectoria </h2>
               
               <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
                 <p>
