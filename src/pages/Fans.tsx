@@ -54,7 +54,7 @@ const Fans = () => {
 
           {/* Fan Community Image */}
           <div className="mb-12 flex justify-center">
-            <div className="w-full max-w-2xl">
+            <div className="w-full max-w-2xl mx-[49px] px-[120px]">
               <img src="https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/499732034_1118749313631177_1066404946131252977_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TPrHLC4CuQIQ7kNvwEzt2Id&_nc_oc=AdkF-g6w8ZX6PARu5p4_KWHy5fJmWOW-rVnLqVg694Vun9gwJQUKqtD8vNG6AsM6BIM&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=1G0eiKNL56w-Yn81fnmJqw&oh=00_AfNslc77d6_A9u1e8pqmUkECI-mOAocGjx_43dwnrpIvig&oe=684954FC" alt="Comunidad de Fans Denis Vela" className="w-full h-auto rounded-lg shadow-lg object-cover" />
             </div>
           </div>
