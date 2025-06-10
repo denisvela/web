@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Target, Heart, Trophy } from 'lucide-react';
+import { Star, Heart, Trophy } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Beyond = () => {
@@ -45,9 +45,14 @@ const Beyond = () => {
               </Link>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-lg flex items-center justify-center">
-                <Target className="w-24 h-24 text-purple-400" />
+              <div className="aspect-square bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/f68ceb52-d483-44d1-8709-302444ea3955.png" 
+                  alt="Nitra stadium" 
+                  className="w-full h-full object-cover"
+                />
               </div>
+              <p className="text-center text-sm text-gray-400 mt-2">Nitra stadium</p>
             </div>
           </div>
         </div>
