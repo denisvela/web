@@ -1,10 +1,8 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from 'react-router-dom';
-
 const Historia = () => {
   return <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
@@ -20,9 +18,9 @@ const Historia = () => {
       {/* Trayectoria Section */}
       <div className="py-20 bg-gray-100 text-gray-900">
         <div className="max-w-5xl mx-auto px-6">
-          <Card className="p-8 mb-16">
+          <Card className="p-8 mb-16 px-0 py-0">
             <CardContent>
-              <h2 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent px-[10px] mx-[7px] my-[45px] py-[15px]">Trayectoria </h2>
+              <h2 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent bg-gray-600 my-0 py-[12px] mx-0 px-0">Trayectoria </h2>
               
               <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
                 <p>
@@ -99,12 +97,8 @@ const Historia = () => {
                   </CardContent>
                 </Card>
               </div>
-              <div className="lg:w-1/2 h-80 rounded-lg overflow-hidden">
-                <img 
-                  src="/lovable-uploads/f98e3e1b-97f7-40d3-8f07-3d356efd28f5.png" 
-                  alt="Primer trofeo con el club juvenil" 
-                  className="w-full h-full object-cover"
-                />
+              <div className="lg:w-1/2 h-80 bg-gradient-to-br from-green-200 to-yellow-200 rounded-lg flex items-center justify-center">
+                <p className="text-gray-600 text-center px-4">Primer trofeo con el club juvenil</p>
               </div>
             </div>
 
@@ -248,5 +242,4 @@ const Historia = () => {
       </div>
     </div>;
 };
-
 export default Historia;
