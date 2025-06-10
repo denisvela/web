@@ -3,10 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Trophy, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Fans = () => {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white">
+  return <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
       <div className="bg-gray-800 py-8">
         <div className="max-w-5xl mx-auto px-6">
@@ -25,13 +23,7 @@ const Fans = () => {
           <div className="flex justify-center mb-8">
             <div className="w-full max-w-5xl">
               <div className="relative aspect-video">
-                <iframe 
-                  src="https://sportnet.sme.sk/futbalnet/z/zsfz/zapas/668fcc21b1444d2ac675ba32/videozaznam/" 
-                  title="Denis Vela - Último Partido en Vivo" 
-                  className="absolute inset-0 w-full h-full rounded-lg shadow-2xl" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen>
+                <iframe src="https://sportnet.sme.sk/futbalnet/z/zsfz/zapas/668fcc21b1444d2ac675ba32/videozaznam/" title="Denis Vela - Último Partido en Vivo" className="absolute inset-0 w-full h-full rounded-lg shadow-2xl" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                 </iframe>
               </div>
             </div>
@@ -63,11 +55,7 @@ const Fans = () => {
           {/* Fan Community Image */}
           <div className="mb-12 flex justify-center">
             <div className="w-full max-w-2xl">
-              <img 
-                src="https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/499732034_1118749313631177_1066404946131252977_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TPrHLC4CuQIQ7kNvwEzt2Id&_nc_oc=AdkF-g6w8ZX6PARu5p4_KWHy5fJmWOW-rVnLqVg694Vun9gwJQUKqtD8vNG6AsM6BIM&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=1G0eiKNL56w-Yn81fnmJqw&oh=00_AfNslc77d6_A9u1e8pqmUkECI-mOAocGjx_43dwnrpIvig&oe=684954FC" 
-                alt="Comunidad de Fans Denis Vela" 
-                className="w-full h-auto rounded-lg shadow-lg object-cover" 
-              />
+              <img src="https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/499732034_1118749313631177_1066404946131252977_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TPrHLC4CuQIQ7kNvwEzt2Id&_nc_oc=AdkF-g6w8ZX6PARu5p4_KWHy5fJmWOW-rVnLqVg694Vun9gwJQUKqtD8vNG6AsM6BIM&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=1G0eiKNL56w-Yn81fnmJqw&oh=00_AfNslc77d6_A9u1e8pqmUkECI-mOAocGjx_43dwnrpIvig&oe=684954FC" alt="Comunidad de Fans Denis Vela" className="w-full h-auto rounded-lg shadow-lg object-cover" />
             </div>
           </div>
 
@@ -101,26 +89,16 @@ const Fans = () => {
 
           {/* Estadísticas de la comunidad */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <Card className="p-6 text-center">
+            <Card className="p-6 text-center rounded-sm mx-[232px] px-[169px] my-0 py-0">
               <CardContent>
                 <div className="text-3xl font-bold text-green-600 mb-2">5,000+</div>
                 <p className="text-gray-600">Seguidores Activos</p>
               </CardContent>
             </Card>
             
-            <Card className="p-6 text-center">
-              <CardContent>
-                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
-                <p className="text-gray-600">Eventos Realizados</p>
-              </CardContent>
-            </Card>
             
-            <Card className="p-6 text-center">
-              <CardContent>
-                <div className="text-3xl font-bold text-purple-600 mb-2">10+</div>
-                <p className="text-gray-600">Años de Comunidad</p>
-              </CardContent>
-            </Card>
+            
+            
           </div>
 
           {/* Testimonios */}
@@ -167,8 +145,6 @@ const Fans = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Fans;
