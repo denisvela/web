@@ -1,8 +1,10 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Heart, Trophy } from 'lucide-react';
+import { Star, Heart, Trophy, Brain, Shield, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
 const Beyond = () => {
   return <div className="min-h-screen bg-gray-900 text-white pt-16">
       {/* Hero Section */}
@@ -51,33 +53,160 @@ const Beyond = () => {
         </div>
       </section>
 
-      {/* Philosophy Cards */}
+      {/* Philosophy Section */}
       <section className="py-20 bg-gray-100 text-gray-900">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Mi Filosofía
+              Mi Filosofía: Entrenamiento 360°
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Los principios que guían mi carrera y mi vida personal.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              En los últimos cinco años, la ciencia del rendimiento ha evolucionado de medir kilos levantados a valorar 
+              calidad de movimiento, resiliencia articular y equilibrio neuro-vegetativo. Las artes marciales, combinadas 
+              con elementos acrobáticos y prácticas de atención plena, constituyen mi modelo de "entrenamiento 360°".
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow border-l-4 border-blue-500 px-[30px] py-[33px] my-0 mx-0">
-              <CardContent>
-                <Star className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-3">Innovación</h3>
-                <p className="text-gray-600">
-                  Romper barreras y crear nuevas formas de expresión en el deporte. 
-                  La innovación nos lleva más allá de lo convencional.
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-blue-500">
+              <CardContent className="p-0">
+                <Star className="w-12 h-12 text-blue-500 mb-4" />
+                <h3 className="text-xl font-bold mb-3">Movilidad Avanzada</h3>
+                <p className="text-gray-600 mb-4">
+                  Un estudio polaco con karatekas encontró correlación directa entre movilidad de hombro y 
+                  adaptaciones articulares específicas sin comprometer la salud estructural.
+                </p>
+                <p className="text-sm text-gray-500">
+                  En Taekwondo, 14 sesiones elevaron la flexibilidad de cadera un 50% (p = 0,002), 
+                  validando protocolos intensivos de las artes marciales.
                 </p>
               </CardContent>
             </Card>
 
-            
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-green-500">
+              <CardContent className="p-0">
+                <Shield className="w-12 h-12 text-green-500 mb-4" />
+                <h3 className="text-xl font-bold mb-3">Fuerza Funcional</h3>
+                <p className="text-gray-600 mb-4">
+                  La fuerza construida lanzando golpes y proyecciones es multiplanar y reactiva. 
+                  Un ensayo con 146 sujetos demostró mejoras significativas en estabilidad articular.
+                </p>
+                <p className="text-sm text-gray-500">
+                  12 semanas de karate vs entrenamiento convencional: solo el grupo marcial 
+                  mejoró equilibrio y prevención de esguinces.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-purple-500">
+              <CardContent className="p-0">
+                <Heart className="w-12 h-12 text-purple-500 mb-4" />
+                <h3 className="text-xl font-bold mb-3">Técnica de Caídas</h3>
+                <p className="text-gray-600 mb-4">
+                  El 70% de lesiones traumáticas ocurren durante aterrizajes. El concepto japonés 
+                  <em> ukemi</em> enseña a distribuir la energía del impacto.
+                </p>
+                <p className="text-sm text-gray-500">
+                  Practicantes de judo cometen 60% menos errores al caer y sufren menos 
+                  fracturas que controles activos (241 sujetos estudiados).
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-orange-500">
+              <CardContent className="p-0">
+                <Zap className="w-12 h-12 text-orange-500 mb-4" />
+                <h3 className="text-xl font-bold mb-3">Explosividad</h3>
+                <p className="text-gray-600 mb-4">
+                  Los flips y salidas de grappling son pliometría avanzada con rotación. 
+                  Meta-análisis 2024 mostró mejoras significativas en sprint y cambios de dirección.
+                </p>
+                <p className="text-sm text-gray-500">
+                  6-8 semanas de entrenamiento: Hedges g = 0,42–1,01 en salto vertical 
+                  y capacidad explosiva en jóvenes futbolistas.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-red-500">
+              <CardContent className="p-0">
+                <Trophy className="w-12 h-12 text-red-500 mb-4" />
+                <h3 className="text-xl font-bold mb-3">Prevención Integral</h3>
+                <p className="text-gray-600 mb-4">
+                  El tridente movilidad-fuerza-técnica reduce simultáneamente riesgo y severidad 
+                  de lesiones: menos LCA, acromioclaviculares y esguinces.
+                </p>
+                <p className="text-sm text-gray-500">
+                  Flexibilidad + fuerza multiplanar + técnica de caída = 
+                  protección articular completa y menor pérdida de partidos.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-indigo-500">
+              <CardContent className="p-0">
+                <Brain className="w-12 h-12 text-indigo-500 mb-4" />
+                <h3 className="text-xl font-bold mb-3">Meditación & Recuperación</h3>
+                <p className="text-gray-600 mb-4">
+                  La reactivación parasimpática se mide por HRV. Técnicas de respiración consciente 
+                  aceleran el restablecimiento del sistema vagal.
+                </p>
+                <p className="text-sm text-gray-500">
+                  8 semanas de mindfulness aumentaron HRV y redujeron ansiedad competitiva 
+                  más que la imaginería motora en atletas universitarios.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Training Session */}
+          <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 text-white">
+            <h3 className="text-2xl font-bold mb-6 text-center">Sesión Integradora de Referencia (60 min)</h3>
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+              <div className="text-center">
+                <div className="bg-blue-600 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 text-sm font-bold">10'</div>
+                <p className="text-sm">Calentamiento dinámico + movilidad</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-green-600 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 text-sm font-bold">10'</div>
+                <p className="text-sm">Running 2 km (Z2-Z3)</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-purple-600 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 text-sm font-bold">15'</div>
+                <p className="text-sm">Circuito marcial–acrobático</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-orange-600 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 text-sm font-bold">15'</div>
+                <p className="text-sm">Breakdance (footwork + power moves)</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-indigo-600 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2 text-sm font-bold">10'</div>
+                <p className="text-sm">Enfriamiento + meditación</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Conclusions */}
+          <div className="mt-16 bg-white rounded-lg p-8 border-l-4 border-purple-600">
+            <h3 className="text-2xl font-bold mb-6 text-purple-600">Conclusiones Operativas</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-bold text-gray-800 mb-2">🥋 Más movilidad = menos lesiones</h4>
+                <p className="text-gray-600 text-sm">Los datos confirman que las artes marciales alcanzan rangos articulares que amortiguan picos de tensión.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-gray-800 mb-2">💪 Fuerza que se mueve</h4>
+                <p className="text-gray-600 text-sm">La potencia en giros y patadas supera la especificidad de la sala de pesas.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-gray-800 mb-2">🤸 Caer bien es clave</h4>
+                <p className="text-gray-600 text-sm">Dominar ukemi reduce fracturas y dislocaciones en deportes de contacto.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-gray-800 mb-2">🧘 La mente dirige la recuperación</h4>
+                <p className="text-gray-600 text-sm">5-10 minutos de mindfulness mejoran la activación vagal post-entrenamiento.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -125,4 +254,5 @@ const Beyond = () => {
       </section>
     </div>;
 };
+
 export default Beyond;
