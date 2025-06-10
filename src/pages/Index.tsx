@@ -123,7 +123,7 @@ const Index = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
             <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="CE Sabadell" className="h-16 w-16 object-contain mb-2" />
+              <img alt="CE Sabadell" className="h-16 w-16 object-contain mb-2" src="/lovable-uploads/19a98292-a8ed-4a1b-b19b-9c9f87f0cf9b.jpg" />
               <span className="text-gray-800 font-semibold text-sm text-center">CE Sabadell</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
