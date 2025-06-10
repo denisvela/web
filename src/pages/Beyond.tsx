@@ -1,8 +1,10 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Trophy, Brain, Shield, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
 const Beyond = () => {
   return <div className="min-h-screen bg-gray-900 text-white pt-16">
       {/* Hero Section */}
@@ -15,6 +17,28 @@ const Beyond = () => {
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
               Donde el fútbol trasciende los límites del campo y se convierte en arte, pasión y legado.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action - Moved to top */}
+      <section className="py-20 bg-gray-800">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6">
+            Únete al Viaje
+          </h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Gracias al *Breaking me desarrolle en el futbol y medio una alternativa de ir más allá.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to="/fans">
+              <Button className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-8 py-3">
+                Ver Último Partido
+              </Button>
+            </Link>
+            <Link to="/">
+              <Button variant="outline" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-8 py-3">
+                Volver al Inicio
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -243,4 +267,5 @@ const Beyond = () => {
       </section>
     </div>;
 };
+
 export default Beyond;
