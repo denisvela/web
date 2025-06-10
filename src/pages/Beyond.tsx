@@ -1,13 +1,10 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Trophy } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Beyond = () => {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white pt-16">
+  return <div className="min-h-screen bg-gray-900 text-white pt-16">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
         <div className="max-w-5xl mx-auto px-6">
@@ -46,11 +43,7 @@ const Beyond = () => {
             </div>
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-lg overflow-hidden">
-                <img 
-                  src="/lovable-uploads/f68ceb52-d483-44d1-8709-302444ea3955.png" 
-                  alt="Nitra stadium" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/f68ceb52-d483-44d1-8709-302444ea3955.png" alt="Nitra stadium" className="w-full h-full object-cover" />
               </div>
               <p className="text-center text-sm text-gray-400 mt-2">Nitra stadium</p>
             </div>
@@ -71,18 +64,9 @@ const Beyond = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow border-l-4 border-purple-500">
-              <CardContent>
-                <Heart className="w-12 h-12 text-purple-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-3">Pasión</h3>
-                <p className="text-gray-600">
-                  Cada jugada, cada entrenamiento, cada momento en el campo nace desde el corazón. 
-                  La pasión es el combustible que impulsa la excelencia.
-                </p>
-              </CardContent>
-            </Card>
+            
 
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow border-l-4 border-blue-500">
+            <Card className="p-6 text-center hover:shadow-lg transition-shadow border-l-4 border-blue-500 px-[30px] py-[33px] my-0 mx-0">
               <CardContent>
                 <Star className="w-12 h-12 text-blue-500 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-3">Innovación</h3>
@@ -93,16 +77,7 @@ const Beyond = () => {
               </CardContent>
             </Card>
 
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow border-l-4 border-green-500">
-              <CardContent>
-                <Trophy className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-3">Perseverancia</h3>
-                <p className="text-gray-600">
-                  Los obstáculos son oportunidades disfrazadas. La perseverancia 
-                  transforma los sueños en realidad.
-                </p>
-              </CardContent>
-            </Card>
+            
           </div>
         </div>
       </section>
@@ -148,8 +123,6 @@ const Beyond = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Beyond;
