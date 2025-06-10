@@ -1,10 +1,8 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Trophy, Brain, Shield, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Beyond = () => {
   return <div className="min-h-screen bg-gray-900 text-white pt-16">
       {/* Hero Section */}
@@ -57,14 +55,8 @@ const Beyond = () => {
       <section className="py-20 bg-gray-100 text-gray-900">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Mi Filosofía: Entrenamiento 360°
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              En los últimos cinco años, la ciencia del rendimiento ha evolucionado de medir kilos levantados a valorar 
-              calidad de movimiento, resiliencia articular y equilibrio neuro-vegetativo. Las artes marciales, combinadas 
-              con elementos acrobáticos y prácticas de atención plena, constituyen mi modelo de "entrenamiento 360°".
-            </p>
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Filosofía</h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">En los últimos cinco años, la ciencia del rendimiento ha evolucionado de medir kilos levantados a valorar calidad de movimiento, resiliencia articular y equilibrio neuro-vegetativo. Las artes marciales, combinadas con elementos acrobáticos y prácticas de atención plena, constituyen mi modelo de -CONTROL CORPORAL- gracias a la disciplina del -Breaking-</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -234,10 +226,7 @@ const Beyond = () => {
           <h2 className="text-3xl font-bold mb-6">
             Únete al Viaje
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Sígueme en este camino donde cada partido es una oportunidad de crear historia 
-            y cada momento es una chance de ir más allá.
-          </p>
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Gracias al *Breaking me desarrolle en el futbol y medio una alternativa de ir más allá.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/fans">
               <Button className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-8 py-3">
@@ -254,5 +243,4 @@ const Beyond = () => {
       </section>
     </div>;
 };
-
 export default Beyond;
