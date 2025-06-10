@@ -3,10 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Trophy, Calendar, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Fans = () => {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white">
+  return <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
       <div className="bg-gray-800 py-8">
         <div className="max-w-5xl mx-auto px-6">
@@ -90,8 +88,8 @@ const Fans = () => {
           </div>
 
           {/* Estadísticas de la comunidad */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <Card className="p-6 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 px-[43px]">
+            <Card className="p-6 text-center px-0 py-0">
               <CardContent>
                 <Instagram className="w-12 h-12 text-pink-500 mx-auto mb-4" />
                 <div className="text-3xl font-bold text-pink-500 mb-2">10k</div>
@@ -144,8 +142,6 @@ const Fans = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Fans;
