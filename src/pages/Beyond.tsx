@@ -1,14 +1,12 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Trophy, Brain, Shield, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Beyond = () => {
   return <div className="min-h-screen bg-gray-900 text-white pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+      <section className="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-[13px] px-0 mx-[74px] my-[5px]">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold uppercase tracking-wider mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">
@@ -21,30 +19,8 @@ const Beyond = () => {
         </div>
       </section>
 
-      {/* Call to Action - Moved to top */}
-      <section className="py-20 bg-gray-800">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Únete al Viaje
-          </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Gracias al *Breaking me desarrolle en el futbol y medio una alternativa de ir más allá.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/fans">
-              <Button className="bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-8 py-3">
-                Ver Último Partido
-              </Button>
-            </Link>
-            <Link to="/">
-              <Button variant="outline" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-8 py-3">
-                Volver al Inicio
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Vision Section */}
-      <section className="py-20 bg-gray-800">
+      <section className="bg-gray-800 px-[14px] mx-0 py-0 my-[20px]">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -267,5 +243,4 @@ const Beyond = () => {
       </section>
     </div>;
 };
-
 export default Beyond;
