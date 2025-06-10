@@ -52,10 +52,10 @@ const Beyond = () => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-20 text-gray-900 bg-gray-900">
+      <section className="py-20 text-gray-900 bg-zinc-50">
         <div className="max-w-6xl mx-auto px-6 text-amber-300">
           <div className="text-center mb-16 text-zinc-50 py-0 my-0 px-0 mx-[2px]">
-            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Filosofía</h2>
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-rose-800">Filosofía</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto bg-neutral-900">En los últimos cinco años, la ciencia del rendimiento ha evolucionado de medir kilos levantados a valorar calidad de movimiento, resiliencia articular y equilibrio neuro-vegetativo. Las artes marciales, combinadas con elementos acrobáticos y prácticas de atención plena, constituyen mi modelo de -CONTROL CORPORAL- gracias a la disciplina del -Breaking-</p>
           </div>
 
@@ -179,24 +179,24 @@ const Beyond = () => {
           </div>
 
           {/* Key Conclusions */}
-          <div className="mt-16 bg-white rounded-lg p-8 border-l-4 border-purple-600">
-            <h3 className="text-2xl font-bold mb-6 text-purple-600">Conclusiones Operativas</h3>
+          <div className="mt-16 rounded-lg p-8 border-l-4 border-purple-600 bg-gray-700">
+            <h3 className="text-2xl font-bold mb-6 text-amber-400">Conclusiones Operativas</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-bold text-gray-800 mb-2">🥋 Más movilidad = menos lesiones</h4>
-                <p className="text-gray-600 text-sm">Los datos confirman que las artes marciales alcanzan rangos articulares que amortiguan picos de tensión.</p>
+                <h4 className="font-bold mb-2 text-zinc-950">🥋 Más movilidad = menos lesiones</h4>
+                <p className="text-sm text-zinc-50">Los datos confirman que las artes marciales alcanzan rangos articulares que amortiguan picos de tensión.</p>
               </div>
               <div>
-                <h4 className="font-bold text-gray-800 mb-2">💪 Fuerza que se mueve</h4>
-                <p className="text-gray-600 text-sm">La potencia en giros y patadas supera la especificidad de la sala de pesas.</p>
+                <h4 className="font-bold mb-2 text-zinc-950">💪 Fuerza que se mueve</h4>
+                <p className="text-sm text-zinc-50">La potencia en giros y patadas supera la especificidad de la sala de pesas.</p>
               </div>
               <div>
-                <h4 className="font-bold text-gray-800 mb-2">🤸 Caer bien es clave</h4>
-                <p className="text-gray-600 text-sm">Dominar ukemi reduce fracturas y dislocaciones en deportes de contacto.</p>
+                <h4 className="font-bold mb-2 text-zinc-950">🤸 Caer bien es clave</h4>
+                <p className="text-sm text-gray-50">Dominar ukemi reduce fracturas y dislocaciones en deportes de contacto.</p>
               </div>
               <div>
-                <h4 className="font-bold text-gray-800 mb-2">🧘 La mente dirige la recuperación</h4>
-                <p className="text-gray-600 text-sm">5-10 minutos de mindfulness mejoran la activación vagal post-entrenamiento.</p>
+                <h4 className="font-bold mb-2 text-zinc-950">🧘 La mente dirige la recuperación</h4>
+                <p className="text-sm text-zinc-50">5-10 minutos de mindfulness mejoran la activación vagal post-entrenamiento.</p>
               </div>
             </div>
           </div>
