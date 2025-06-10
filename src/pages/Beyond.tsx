@@ -60,90 +60,90 @@ const Beyond = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-blue-500">
-              <CardContent className="p-0">
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-blue-500 bg-gray-950">
+              <CardContent className="p-0 bg-gray-950">
                 <Star className="w-12 h-12 text-blue-500 mb-4" />
-                <h3 className="text-xl font-bold mb-3">Movilidad Avanzada</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-xl font-bold mb-3 text-gray-100">Movilidad Avanzada</h3>
+                <p className="mb-4 text-zinc-300">
                   Un estudio polaco con karatekas encontró correlación directa entre movilidad de hombro y 
                   adaptaciones articulares específicas sin comprometer la salud estructural.
                 </p>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-amber-400">
                   En Taekwondo, 14 sesiones elevaron la flexibilidad de cadera un 50% (p = 0,002), 
                   validando protocolos intensivos de las artes marciales.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-green-500">
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-green-500 bg-gray-950">
               <CardContent className="p-0">
                 <Shield className="w-12 h-12 text-green-500 mb-4" />
-                <h3 className="text-xl font-bold mb-3">Fuerza Funcional</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-xl font-bold mb-3 text-green-600">Fuerza Funcional</h3>
+                <p className="mb-4 text-gray-300">
                   La fuerza construida lanzando golpes y proyecciones es multiplanar y reactiva. 
                   Un ensayo con 146 sujetos demostró mejoras significativas en estabilidad articular.
                 </p>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-amber-400">
                   12 semanas de karate vs entrenamiento convencional: solo el grupo marcial 
                   mejoró equilibrio y prevención de esguinces.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-purple-500">
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-purple-500 bg-slate-950">
               <CardContent className="p-0">
                 <Heart className="w-12 h-12 text-purple-500 mb-4" />
-                <h3 className="text-xl font-bold mb-3">Técnica de Caídas</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-xl font-bold mb-3 text-purple-500">Técnica de Caídas</h3>
+                <p className="mb-4 text-gray-300">
                   El 70% de lesiones traumáticas ocurren durante aterrizajes. El concepto japonés 
                   <em> ukemi</em> enseña a distribuir la energía del impacto.
                 </p>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-yellow-400">
                   Practicantes de judo cometen 60% menos errores al caer y sufren menos 
                   fracturas que controles activos (241 sujetos estudiados).
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-orange-500">
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-orange-500 bg-slate-950">
               <CardContent className="p-0">
                 <Zap className="w-12 h-12 text-orange-500 mb-4" />
-                <h3 className="text-xl font-bold mb-3">Explosividad</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-xl font-bold mb-3 text-orange-500">Explosividad</h3>
+                <p className="mb-4 text-gray-50">
                   Los flips y salidas de grappling son pliometría avanzada con rotación. 
                   Meta-análisis 2024 mostró mejoras significativas en sprint y cambios de dirección.
                 </p>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-amber-500">
                   6-8 semanas de entrenamiento: Hedges g = 0,42–1,01 en salto vertical 
                   y capacidad explosiva en jóvenes futbolistas.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-red-500">
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-red-500 bg-gray-950">
               <CardContent className="p-0">
                 <Trophy className="w-12 h-12 text-red-500 mb-4" />
-                <h3 className="text-xl font-bold mb-3">Prevención Integral</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-xl font-bold mb-3 text-red-500">Prevención Integral</h3>
+                <p className="mb-4 text-zinc-300">
                   El tridente movilidad-fuerza-técnica reduce simultáneamente riesgo y severidad 
                   de lesiones: menos LCA, acromioclaviculares y esguinces.
                 </p>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-yellow-500">
                   Flexibilidad + fuerza multiplanar + técnica de caída = 
                   protección articular completa y menor pérdida de partidos.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-indigo-500">
+            <Card className="p-6 hover:shadow-lg transition-shadow border-l-4 border-indigo-500 bg-gray-950">
               <CardContent className="p-0">
                 <Brain className="w-12 h-12 text-indigo-500 mb-4" />
-                <h3 className="text-xl font-bold mb-3">Meditación & Recuperación</h3>
-                <p className="text-gray-600 mb-4">
+                <h3 className="text-xl font-bold mb-3 text-sky-500">Meditación & Recuperación</h3>
+                <p className="mb-4 text-gray-300">
                   La reactivación parasimpática se mide por HRV. Técnicas de respiración consciente 
                   aceleran el restablecimiento del sistema vagal.
                 </p>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-amber-400">
                   8 semanas de mindfulness aumentaron HRV y redujeron ansiedad competitiva 
                   más que la imaginería motora en atletas universitarios.
                 </p>
