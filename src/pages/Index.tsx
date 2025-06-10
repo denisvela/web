@@ -88,11 +88,7 @@ const Index = () => {
             <Card className="p-8 max-w-4xl mx-auto">
               <CardContent>
                 <h3 className="text-2xl font-bold mb-6">Resumen de mi carrera</h3>
-                <p className="text-gray-600 text-lg mb-4">
-                  Desde mis inicios en las calles de mi barrio con una pelota hecha de trapos, 
-                  hasta llegar a ser jugador profesional, mi historia es de perseverancia, 
-                  dedicación y el apoyo incondicional de mi familia.
-                </p>
+                <p className="text-gray-600 text-lg mb-4">De jugar en tierra a festejar goles bajo los focos, disciplina,  perseverancia, arte y el impulso constante de mi familia. Centenares de botas y balones rotos y cada obstáculo superado con confianza dan sentido a la celebración al marcar que me define.</p>
                 <p className="text-gray-600 text-lg mb-6">
                   Cada paso de mi carrera ha sido una lección, cada desafío una oportunidad 
                   de crecimiento que me ha convertido en el jugador que soy hoy.
