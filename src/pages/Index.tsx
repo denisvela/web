@@ -178,8 +178,8 @@ const Index = () => {
       </section>
 
       {/* Sponsors Section */}
-      <section className="py-20 bg-white text-gray-900">
-        <div className="max-w-5xl bg-zinc-50 mx-[30px] my-[28px] py-[2px] px-0">
+      <section className="bg-white text-gray-900 mx-0 my-0 py-[7px] px-0">
+        <div className="max-w-5xl bg-zinc-50 mx-0 px-[3px] py-0 my-0">
           <div className="text-center mb-16 bg-zinc-950">
             <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-indigo-600 via-pink-600 to-red-600 bg-clip-text text-transparent relative">
               Sponsors
@@ -190,7 +190,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-7 gap-8 items-center mx-[29px] py-[14px] my-[43px] px-[16px]">
+          <div className="grid grid-cols-2 lg:grid-cols-7 gap-8 items-center py-[14px] my-[43px] px-[16px] mx-[15px]">
             <div className="flex justify-center">
               <img src="https://www.grandhotelsole.sk/uploads/base/grand-hotel-sole-nitra-slovakia-logo.svg" alt="Grand Hotel Sole" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
@@ -209,7 +209,7 @@ const Index = () => {
             <div className="flex justify-center">
               <img src="https://brandlogos.net/wp-content/uploads/2023/12/coppel-logo_brandlogos.net_21m2l.png" alt="Coppel" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center px-0 mx-0 my-0 py-0">
               <img alt="G-Shock Casio" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" src="/lovable-uploads/c8ce4dd1-43ca-435c-9745-35b6a7e2b97a.jpg" />
             </div>
           </div>
