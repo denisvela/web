@@ -139,8 +139,8 @@ const Index = () => {
               <span className="text-gray-800 font-semibold text-sm text-center">FK Bucdonost</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="UDA Gramanet" className="h-16 w-16 object-contain mb-2" />
-              <span className="text-gray-800 font-semibold text-sm text-center">UDA Gramanet</span>
+              <img alt="UDA Gramanet" className="h-16 w-16 object-contain mb-2" src="/lovable-uploads/3e205ec6-8ec9-4b58-a781-3815f86832bf.jpg" />
+              <span className="text-gray-800 font-semibold text-sm text-center">CE Mercantil</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
               <img alt="UD Socuéllamos" className="h-16 w-16 object-contain mb-2" src="/lovable-uploads/d8f31e47-661b-4a6f-8c64-b0ab0844350a.png" />
