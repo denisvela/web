@@ -54,7 +54,7 @@ const Beyond = () => {
       {/* Philosophy Section */}
       <section className="py-20 text-gray-900 bg-gray-900">
         <div className="max-w-6xl mx-auto px-6 text-amber-300">
-          <div className="text-center mb-16 text-zinc-50">
+          <div className="text-center mb-16 text-zinc-50 py-0 my-0 px-0 mx-[2px]">
             <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Filosofía</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto bg-neutral-900">En los últimos cinco años, la ciencia del rendimiento ha evolucionado de medir kilos levantados a valorar calidad de movimiento, resiliencia articular y equilibrio neuro-vegetativo. Las artes marciales, combinadas con elementos acrobáticos y prácticas de atención plena, constituyen mi modelo de -CONTROL CORPORAL- gracias a la disciplina del -Breaking-</p>
           </div>
