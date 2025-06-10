@@ -127,7 +127,7 @@ const Index = () => {
               <span className="text-gray-800 font-semibold text-sm text-center">CE Sabadell</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
-              <img src="/lovable-uploads/9f80bc99-8b7f-4587-8ad6-6b48493b505c.png" alt="RCD Espanyol" className="h-16 w-16 object-contain mb-2" />
+              <img alt="RCD Espanyol" className="h-16 w-16 object-contain mb-2" src="/lovable-uploads/98a48ed3-c17a-4858-9a78-b472727e543a.png" />
               <span className="text-gray-800 font-semibold text-sm text-center">RCD Espanyol</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105">
