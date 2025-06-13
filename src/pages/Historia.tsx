@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from 'react-router-dom';
+
 const Historia = () => {
   return <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
@@ -50,7 +51,7 @@ const Historia = () => {
                     </p>
                   </div>
                 </div>
-                <div className="lg:w-1/3 h-80 rounded-lg overflow-hidden px-0 mx-0 my-[44px] py-[42px]">
+                <div className="lg:w-1/3 h-96 rounded-lg overflow-hidden px-0 mx-0 my-[44px] py-[64px]">
                   <img src="/lovable-uploads/6fec1f08-86fd-4864-9c7e-f17aca91bf74.png" alt="Denis Vela en sus primeros pasos profesionales" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -249,4 +250,5 @@ const Historia = () => {
       </div>
     </div>;
 };
+
 export default Historia;
