@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -170,8 +171,8 @@ const Historia = () => {
                   </CardContent>
                 </Card>
               </div>
-              <div className="lg:w-1/2 h-80 bg-gradient-to-br from-red-200 to-purple-200 rounded-lg flex items-center justify-center">
-                <p className="text-gray-600 text-center px-4">Liderazgo en el campo</p>
+              <div className="lg:w-1/2 h-80 rounded-lg overflow-hidden">
+                <img src="/lovable-uploads/f57c28fe-bef4-4e71-b4a4-399980417db8.png" alt="Denis Vela practicando breaking" className="w-full h-full object-cover" />
               </div>
             </div>
 
