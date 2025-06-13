@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from 'react-router-dom';
+
 const Historia = () => {
   return <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
@@ -73,8 +74,12 @@ const Historia = () => {
                   </CardContent>
                 </Card>
               </div>
-              <div className="lg:w-1/2 h-80 bg-gradient-to-br from-blue-200 to-green-200 rounded-lg flex items-center justify-center">
-                <p className="text-gray-600 text-center px-4">Primeros entrenamientos en el barrio</p>
+              <div className="lg:w-1/2 h-80 rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/6fec1f08-86fd-4864-9c7e-f17aca91bf74.png" 
+                  alt="Denis Vela en sus primeros pasos profesionales" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
@@ -97,8 +102,12 @@ const Historia = () => {
                   </CardContent>
                 </Card>
               </div>
-              <div className="lg:w-1/2 h-80 bg-gradient-to-br from-green-200 to-yellow-200 rounded-lg flex items-center justify-center">
-                <p className="text-gray-600 text-center px-4">Primer trofeo con el club juvenil</p>
+              <div className="lg:w-1/2 h-80 rounded-lg overflow-hidden">
+                <img 
+                  src="/lovable-uploads/f98e3e1b-97f7-40d3-8f07-3d356efd28f5.png" 
+                  alt="Denis Vela en sus primeros logros" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
@@ -242,4 +251,5 @@ const Historia = () => {
       </div>
     </div>;
 };
+
 export default Historia;
