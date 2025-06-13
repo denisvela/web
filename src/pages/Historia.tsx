@@ -22,30 +22,37 @@ const Historia = () => {
             <CardContent>
               <h2 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent bg-gray-600 my-0 py-[12px] mx-0 px-0">Trayectoria </h2>
               
-              <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-                <p>
-                  Denis Vela dio sus primeros pasos en el fútbol profesional a una edad inusualmente temprana con la UD Socuéllamos. Allí, bajo la tutela y el aliento constante de su padre, fue puliendo un talento natural que ya despuntaba. Sin embargo, una grave enfermedad de un familiar y la posterior mudanza de su padre a Brasil alteraron el rumbo de su vida deportiva: Denis tuvo que regresar a su localidad natal con su madre y, sin recursos ni un club de nivel a su alcance, el balón quedó en pausa.
-                </p>
-                
-                <p>
-                  Tras un periodo de búsqueda, se incorporó al Badia del Vallès con la promesa de portar el dorsal 10 en el primer equipo. Pero un cambio de directiva al año siguiente lo relegó al banquillo de Segunda Regional. Desmotivado y con escasas posibilidades de moverse por falta de apoyo económico, decidió canalizar su energía en el Breaking, disciplina que acabaría enriqueciendo su habilidad atlética y su expresión corporal.
-                </p>
-                
-                <p>
-                  En el Breaking cosechó una trayectoria plagada de competiciones y trofeos, llegando incluso a realizar competiciones en el ámbito internacional. Aunque el baile se convirtió en una nueva pasión, nunca se desvinculó del fútbol: participó con regularidad en torneos locales y de la provincia de Barcelona para mantener vivo su instinto competitivo.
-                </p>
-                
-                <p>
-                  El punto de inflexión llegó cuando un amigo lo invitó a la Liga ADLC, un prestigioso torneo anual de fútbol 11 retransmitido para Latinoamérica y con presencia de jugadores de primer nivel. Denis participó en 14 encuentros, firmó goles memorables y alcanzó los cuartos de final. Aquel escaparate reavivó su convicción: <strong>debía regresar a las grandes ligas</strong>.
-                </p>
-                
-                <p>
-                  Se fijó entonces un reto singular y simbólico: <strong>anotar en un partido profesional y celebrar el gol con un paso de breaking</strong>, convirtiéndose en el primer futbolista en hacerlo. Esa meta, que fusiona sus dos grandes pasiones, lo motivó al máximo y marcó su retorno al fútbol profesional a los 28 años.
-                </p>
-                
-                <p>
-                  Hoy, Denis Vela continúa representando el breaking dentro del fútbol, honrando una disciplina que le ayudó a reinventarse y a potenciar facetas impensadas de su juego. Su historia es la prueba de que perseverancia y autenticidad pueden converger para crear un estilo único—dentro y fuera del terreno de juego.
-                </p>
+              <div className="flex flex-col lg:flex-row items-start gap-8">
+                <div className="lg:w-2/3">
+                  <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+                    <p>
+                      Denis Vela dio sus primeros pasos en el fútbol profesional a una edad inusualmente temprana con la UD Socuéllamos. Allí, bajo la tutela y el aliento constante de su padre, fue puliendo un talento natural que ya despuntaba. Sin embargo, una grave enfermedad de un familiar y la posterior mudanza de su padre a Brasil alteraron el rumbo de su vida deportiva: Denis tuvo que regresar a su localidad natal con su madre y, sin recursos ni un club de nivel a su alcance, el balón quedó en pausa.
+                    </p>
+                    
+                    <p>
+                      Tras un periodo de búsqueda, se incorporó al Badia del Vallès con la promesa de portar el dorsal 10 en el primer equipo. Pero un cambio de directiva al año siguiente lo relegó al banquillo de Segunda Regional. Desmotivado y con escasas posibilidades de moverse por falta de apoyo económico, decidió canalizar su energía en el Breaking, disciplina que acabaría enriqueciendo su habilidad atlética y su expresión corporal.
+                    </p>
+                    
+                    <p>
+                      En el Breaking cosechó una trayectoria plagada de competiciones y trofeos, llegando incluso a realizar competiciones en el ámbito internacional. Aunque el baile se convirtió en una nueva pasión, nunca se desvinculó del fútbol: participó con regularidad en torneos locales y de la provincia de Barcelona para mantener vivo su instinto competitivo.
+                    </p>
+                    
+                    <p>
+                      El punto de inflexión llegó cuando un amigo lo invitó a la Liga ADLC, un prestigioso torneo anual de fútbol 11 retransmitido para Latinoamérica y con presencia de jugadores de primer nivel. Denis participó en 14 encuentros, firmó goles memorables y alcanzó los cuartos de final. Aquel escaparate reavivó su convicción: <strong>debía regresar a las grandes ligas</strong>.
+                    </p>
+                    
+                    <p>
+                      Se fijó entonces un reto singular y simbólico: <strong>anotar en un partido profesional y celebrar el gol con un paso de breaking</strong>, convirtiéndose en el primer futbolista en hacerlo. Esa meta, que fusiona sus dos grandes pasiones, lo motivó al máximo y marcó su retorno al fútbol profesional a los 28 años.
+                    </p>
+                    
+                    <p>
+                      Hoy, Denis Vela continúa representando el breaking dentro del fútbol, honrando una disciplina que le ayudó a reinventarse y a potenciar facetas impensadas de su juego. Su historia es la prueba de que perseverancia y autenticidad pueden converger para crear un estilo único—dentro y fuera del terreno de juego.
+                    </p>
+                  </div>
+                </div>
+                <div className="lg:w-1/3 h-80 rounded-lg overflow-hidden">
+                  <img src="/lovable-uploads/6fec1f08-86fd-4864-9c7e-f17aca91bf74.png" alt="Denis Vela en sus primeros pasos profesionales" className="w-full h-full object-cover" />
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -74,7 +81,7 @@ const Historia = () => {
                 </Card>
               </div>
               <div className="lg:w-1/2 h-80 rounded-lg overflow-hidden mx-[65px] my-px py-0 px-[12px]">
-                <img src="/lovable-uploads/6fec1f08-86fd-4864-9c7e-f17aca91bf74.png" alt="Denis Vela en sus primeros pasos profesionales" className="w-full h-full object-cover" />
+                <img src="/lovable-uploads/f98e3e1b-97f7-40d3-8f07-3d356efd28f5.png" alt="Denis Vela en sus primeros pasos profesionales" className="w-full h-full object-cover" />
               </div>
             </div>
 
