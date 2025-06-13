@@ -211,7 +211,7 @@ const Historia = () => {
               </div>
               <Card className="p-8 bg-gray-800 border-gray-700">
                 <CardContent>
-                  <blockquote className="text-lg italic text-gray-300 mb-4">
+                  <blockquote className="text-lg italic text-gray-300 mb-4 bg-teal-950">
                     "El fútbol me ha dado todo, y es mi responsabilidad devolver a la comunidad 
                     lo que el deporte me ha enseñado: disciplina, trabajo en equipo y perseverancia."
                   </blockquote>
