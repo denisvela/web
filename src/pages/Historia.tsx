@@ -25,7 +25,7 @@ const Historia = () => {
               <div className="flex flex-col lg:flex-row items-start gap-8">
                 <div className="lg:w-2/3">
                   <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-                    <p>
+                    <p className="py-0 mx-0 my-0 px-[33px]">
                       Denis Vela dio sus primeros pasos en el fútbol profesional a una edad inusualmente temprana con la UD Socuéllamos. Allí, bajo la tutela y el aliento constante de su padre, fue puliendo un talento natural que ya despuntaba. Sin embargo, una grave enfermedad de un familiar y la posterior mudanza de su padre a Brasil alteraron el rumbo de su vida deportiva: Denis tuvo que regresar a su localidad natal con su madre y, sin recursos ni un club de nivel a su alcance, el balón quedó en pausa.
                     </p>
                     
@@ -33,11 +33,11 @@ const Historia = () => {
                       Tras un periodo de búsqueda, se incorporó al Badia del Vallès con la promesa de portar el dorsal 10 en el primer equipo. Pero un cambio de directiva al año siguiente lo relegó al banquillo de Segunda Regional. Desmotivado y con escasas posibilidades de moverse por falta de apoyo económico, decidió canalizar su energía en el Breaking, disciplina que acabaría enriqueciendo su habilidad atlética y su expresión corporal.
                     </p>
                     
-                    <p>
+                    <p className="px-0 py-0 my-0 mx-0 text-left font-thin">
                       En el Breaking cosechó una trayectoria plagada de competiciones y trofeos, llegando incluso a realizar competiciones en el ámbito internacional. Aunque el baile se convirtió en una nueva pasión, nunca se desvinculó del fútbol: participó con regularidad en torneos locales y de la provincia de Barcelona para mantener vivo su instinto competitivo.
                     </p>
                     
-                    <p>
+                    <p className="text-left font-normal">
                       El punto de inflexión llegó cuando un amigo lo invitó a la Liga ADLC, un prestigioso torneo anual de fútbol 11 retransmitido para Latinoamérica y con presencia de jugadores de primer nivel. Denis participó en 14 encuentros, firmó goles memorables y alcanzó los cuartos de final. Aquel escaparate reavivó su convicción: <strong>debía regresar a las grandes ligas</strong>.
                     </p>
                     
@@ -50,7 +50,7 @@ const Historia = () => {
                     </p>
                   </div>
                 </div>
-                <div className="lg:w-1/3 h-80 rounded-lg overflow-hidden">
+                <div className="lg:w-1/3 h-80 rounded-lg overflow-hidden px-0 mx-0 my-[44px] py-[42px]">
                   <img src="/lovable-uploads/6fec1f08-86fd-4864-9c7e-f17aca91bf74.png" alt="Denis Vela en sus primeros pasos profesionales" className="w-full h-full object-cover" />
                 </div>
               </div>
