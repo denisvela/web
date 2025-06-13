@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from 'react-router-dom';
-
 const Historia = () => {
   return <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
@@ -165,17 +164,9 @@ const Historia = () => {
                 <Card className="p-8">
                   <CardContent>
                     <Badge className="mb-4 bg-red-100 text-red-800">2020-2024 - Consolidación</Badge>
-                    <h3 className="text-3xl font-bold mb-4">Madurez y Liderazgo</h3>
-                    <p className="text-gray-600 mb-4">
-                      Los últimos años han sido de crecimiento personal y profesional. 
-                      He aprendido que ser jugador profesional va más allá del talento; 
-                      requiere disciplina mental, liderazgo y responsabilidad social.
-                    </p>
-                    <p className="text-gray-600">
-                      Hoy, cada vez que entro al campo, cargo conmigo no solo mis sueños, 
-                      sino los de todos los niños que, como yo, sueñan con llegar lejos 
-                      desde lugares humildes.
-                    </p>
+                    <h3 className="text-3xl font-bold mb-4">Breaking - Control Corporal</h3>
+                    <p className="text-gray-600 mb-4">Con la suerte de participar en competiciones Internacionales, y en escenarios increíbles.</p>
+                    <p className="text-gray-600">Me hacen pensar que todo es posible.</p>
                   </CardContent>
                 </Card>
               </div>
@@ -250,5 +241,4 @@ const Historia = () => {
       </div>
     </div>;
 };
-
 export default Historia;
