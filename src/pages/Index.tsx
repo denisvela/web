@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -22,19 +23,19 @@ const Index = () => {
       background: "url('https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/467553662_977425757763534_5921363224878748512_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lneuUP4uw0kQ7kNvwF4FSFF&_nc_oc=AdmPayt2S5iOKS7KNeNJ1To3VFVL9xSsxUtdhliEB1NtvZa2VBbReKl1yORYpt16_1A&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=vB4tE_gt51yjM0QB-TMntA&oh=00_AfK0XUAyBfcffa_bQ1bUE8rUOX2Oci_IJeHnP6qxXNgyug&oe=68464DF1') center/cover no-repeat"
     }}>
         <div className="absolute inset-0 bg-black/40"></div>
-        <div className="relative z-10 max-w-4xl px-6">
+        <div className="relative z-10 max-w-4xl px-6 float-animation">
           
-          <p className="mt-4 text-lg sm:text-xl text-amber-400 font-light lg:text-5xl">
+          <p className="mt-4 text-lg sm:text-xl text-amber-400 font-light lg:text-5xl float-gentle float-delay-1">
             Más allá...
           </p>
           
           {/* Button to Historia */}
           <Link to="/historia">
-            <Button className="mt-8 rounded-2xl bg-red-600 text-base font-semibold uppercase tracking-widest hover:bg-red-700 px-[10px] mx-0 my-[4px] py-0 text-gray-50">Conoce mi historia</Button>
+            <Button className="mt-8 rounded-2xl bg-red-600 text-base font-semibold uppercase tracking-widest hover:bg-red-700 px-[10px] mx-0 my-[4px] py-0 text-gray-50 float-slow float-delay-2">Conoce mi historia</Button>
           </Link>
           
           {/* Social Media Links */}
-          <div className="mt-8 flex justify-center space-x-6">
+          <div className="mt-8 flex justify-center space-x-6 float-gentle float-delay-3">
             <a href="https://www.instagram.com/denisvela30/" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all hover:scale-110" aria-label="Instagram">
               <Instagram className="w-6 h-6" />
             </a>
@@ -54,7 +55,7 @@ const Index = () => {
       {/* YouTube Section */}
       <section className="py-20 bg-gray-800 text-white">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 float-animation">
             <h2 className="text-3xl font-bold uppercase tracking-wide mb-4">Últimos Highlights</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Revive los mejores momentos de mi carrera y mantente al día con mi contenido más reciente.
@@ -62,7 +63,7 @@ const Index = () => {
           </div>
           
           <div className="flex justify-center">
-            <div className="w-full max-w-4xl">
+            <div className="w-full max-w-4xl float-gentle float-delay-1">
               <div className="relative aspect-video">
                 <iframe src="https://www.youtube.com/embed/4XJFU3kNrDA" title="Denis Vela - Highlights" className="absolute inset-0 w-full h-full rounded-lg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>

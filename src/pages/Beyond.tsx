@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -8,13 +9,29 @@ const Beyond = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-[13px] px-0 mx-[74px] my-[5px]">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold uppercase tracking-wider mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">
+          <div className="text-center float-animation">
+            <h1 className="text-5xl md:text-6xl font-bold uppercase tracking-wider mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent float-gentle float-delay-1">
               Más Allá
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 float-slow float-delay-2">
               Donde el fútbol trasciende los límites del campo y se convierte en arte, pasión y legado.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Únete al Viaje Section */}
+      <section className="bg-gradient-to-br from-red-900 via-purple-900 to-indigo-900 py-20">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-8 text-white float-animation">
+            Únete al Viaje
+          </h2>
+          <blockquote className="text-xl italic text-gray-200 mb-8 leading-relaxed float-gentle float-delay-1">
+            "Cada paso que doy en el campo es un paso hacia mi sueño. Cada gol que anoto es una celebración de quién soy: 
+            un futbolista que no tiene miedo de ser diferente, de fusionar el breaking con el fútbol, de ir más allá."
+          </blockquote>
+          <div className="text-right float-slow float-delay-2">
+            <cite className="text-purple-300 font-semibold">— Denis Vela</cite>
           </div>
         </div>
       </section>
@@ -23,7 +40,7 @@ const Beyond = () => {
       <section className="bg-gray-800 px-[14px] mx-0 py-0 my-[20px]">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="float-animation">
               <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
                 Más Allá del Juego
               </h2>
@@ -39,7 +56,7 @@ const Beyond = () => {
                 
               </Link>
             </div>
-            <div className="relative">
+            <div className="relative float-gentle float-delay-1">
               <div className="aspect-square bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-lg overflow-hidden">
                 <img src="/lovable-uploads/f68ceb52-d483-44d1-8709-302444ea3955.png" alt="Nitra stadium" className="w-full h-full object-cover" />
               </div>
