@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -71,7 +70,7 @@ const Beyond = () => {
         <div className="max-w-6xl mx-auto px-6 text-amber-300">
           <div className="text-center mb-16 text-zinc-50 py-0 my-0 px-0 mx-[2px]">
             <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-rose-800">Filosofía</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto bg-neutral-900">En los últimos cinco años, la ciencia del rendimiento ha evolucionado de medir kilos levantados a valorar calidad de movimiento, resiliencia articular y equilibrio neuro-vegetativo. Las artes marciales, combinadas con elementos acrobáticos y prácticas de atención plena, constituyen mi modelo de -CONTROL CORPORAL- gracias a la disciplina del -Breaking-</p>
+            <p className="text-xl max-w-4xl mx-auto bg-neutral-900 text-zinc-50">En los últimos cinco años, la ciencia del rendimiento ha evolucionado de medir kilos levantados a valorar calidad de movimiento, resiliencia articular y equilibrio neuro-vegetativo. Las artes marciales, combinadas con elementos acrobáticos y prácticas de atención plena, constituyen mi modelo de -CONTROL CORPORAL- gracias a la disciplina del -Breaking-</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
