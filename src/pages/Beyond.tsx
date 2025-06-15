@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Heart, Trophy, Brain, Shield, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
 const Beyond = () => {
   return <div className="min-h-screen bg-gray-900 text-white pt-16">
       {/* Hero Section */}
@@ -20,7 +21,7 @@ const Beyond = () => {
       </section>
 
       {/* Únete al Viaje Section */}
-      <section className="bg-gradient-to-br from-red-900 via-purple-900 to-indigo-900 py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-violet-900 py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-8 text-white float-animation">
             Únete al Viaje
@@ -255,4 +256,5 @@ const Beyond = () => {
       </section>
     </div>;
 };
+
 export default Beyond;
