@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -219,7 +220,7 @@ const Beyond = () => {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-20 bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900">
+      <section className="py-20 bg-gradient-to-r from-emerald-900 via-cyan-900 to-blue-900">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-8 text-white">
             Mi Misión
