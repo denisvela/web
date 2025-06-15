@@ -70,37 +70,7 @@ const Index = () => {
       </section>
 
       {/* Historia Section - Resumen */}
-      <section id="historia" className="py-20 bg-white text-gray-900">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-16 bg-gray-950">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider mb-4 bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 bg-clip-text text-transparent relative">
-              Mi Historia
-              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-amber-600 via-red-600 to-purple-600 rounded-full mx-auto w-24"></div>
-            </h2>
-            <p className="text-xl max-w-3xl mx-auto text-zinc-50">
-              Un viaje desde los barrios humildes hasta los estadios más importantes del mundo.
-            </p>
-          </div>
-
-          <div className="text-center">
-            <Card className="p-8 max-w-4xl mx-auto">
-              <CardContent>
-                <h3 className="text-2xl font-bold mb-6">Resumen de mi carrera</h3>
-                <p className="text-gray-600 text-lg mb-4">De jugar en tierra a festejar goles bajo los focos, disciplina,  perseverancia, arte y el impulso constante de mi familia. Centenares de botas y balones rotos y cada obstáculo superado con confianza dan sentido a la celebración al marcar que me define.</p>
-                <p className="text-gray-600 text-lg mb-6">
-                  Cada paso de mi carrera ha sido una lección, cada desafío una oportunidad 
-                  de crecimiento que me ha convertido en el jugador que soy hoy.
-                </p>
-                <Link to="/historia">
-                  <Button className="bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-700 hover:to-red-700 text-white px-8 py-3">
-                    Ver Historia Completa
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Clubes & Academias Section */}
       <section className="py-20 bg-gray-900 text-white">
