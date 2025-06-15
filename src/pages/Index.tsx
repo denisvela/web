@@ -62,7 +62,7 @@ const Index = () => {
           <div className="flex justify-center">
             <div className="w-full max-w-4xl float-gentle float-delay-1">
               <div className="relative aspect-video">
-                <iframe src="https://www.youtube.com/embed/4XJFU3kNrDA" title="Denis Vela - Highlights" className="absolute inset-0 w-full h-full rounded-lg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe src="https://www.youtube.com/embed/EqdtztpBRDM" title="Denis Vela - Highlights" className="absolute inset-0 w-full h-full rounded-lg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
           </div>
