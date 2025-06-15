@@ -153,12 +153,10 @@ const Index = () => {
               Sponsors
               <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-indigo-600 via-pink-600 to-red-600 rounded-full mx-auto w-24"></div>
             </h2>
-            <p className="text-xl max-w-3xl mx-auto text-zinc-50">
-              Orgulloso de contar con el apoyo de estas prestigiosas marcas que confían en mi carrera profesional.
-            </p>
+            
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-7 gap-8 items-center py-[14px] my-[43px] px-[16px] mx-[15px]">
+          <div className="grid grid-cols-2 lg:grid-cols-7 gap-8 items-center py-[14px] my-[43px] px-[16px] mx-[20px]">
             <div className="flex justify-center">
               <img src="https://www.grandhotelsole.sk/uploads/base/grand-hotel-sole-nitra-slovakia-logo.svg" alt="Grand Hotel Sole" className="h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
             </div>
