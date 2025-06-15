@@ -114,7 +114,7 @@ const Historia = () => {
               <div className="lg:w-1/2">
                 <Card className="p-8">
                   <CardContent>
-                    <Badge className="mb-4 bg-purple-100 text-purple-800">2015 - Debut Profesional</Badge>
+                    <Badge className="mb-4 bg-purple-100 text-purple-800">El Salto Profesional</Badge>
                     <h3 className="text-3xl font-bold mb-4">El Salto al Profesionalismo</h3>
                     <p className="text-gray-600 mb-4">
                       Mi debut profesional fue el 15 de marzo de 2015, a los 17 años. Recuerdo cada detalle: 
@@ -128,8 +128,8 @@ const Historia = () => {
                   </CardContent>
                 </Card>
               </div>
-              <div className="lg:w-1/2 h-80 rounded-lg overflow-hidden">
-                <img src="/lovable-uploads/2c5b8473-f381-4c0c-8d88-30f60f9122eb.png" alt="Denis Vela mostrando su camiseta profesional número 10" className="w-full h-full object-cover" />
+              <div className="lg:w-1/2 h-80 bg-gradient-to-br from-purple-200 to-pink-200 rounded-lg flex items-center justify-center">
+                <p className="text-gray-600 text-center px-4">Debut profesional - Marzo 2015</p>
               </div>
             </div>
 
