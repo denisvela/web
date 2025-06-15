@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -25,13 +24,11 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 max-w-4xl px-6 float-animation">
           
-          <p className="mt-4 text-lg sm:text-xl text-amber-400 font-light lg:text-5xl float-gentle float-delay-1">
-            Más allá...
-          </p>
+          <p className="mt-4 text-lg sm:text-xl text-amber-400 font-light lg:text-5xl float-gentle float-delay-1">ABOUT</p>
           
           {/* Button to Historia */}
           <Link to="/historia">
-            <Button className="mt-8 rounded-2xl bg-red-600 text-base font-semibold uppercase tracking-widest hover:bg-red-700 px-[10px] mx-0 my-[4px] py-0 text-gray-50 float-slow float-delay-2">Conoce mi historia</Button>
+            <Button className="mt-8 rounded-2xl bg-red-600 text-base font-semibold uppercase tracking-widest hover:bg-red-700 px-[10px] mx-0 my-[4px] py-0 text-gray-50 float-slow float-delay-2">CONOCE LA HISTORIA</Button>
           </Link>
           
           {/* Social Media Links */}
