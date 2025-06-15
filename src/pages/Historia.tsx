@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -129,8 +128,8 @@ const Historia = () => {
                   </CardContent>
                 </Card>
               </div>
-              <div className="lg:w-1/2 h-80 bg-gradient-to-br from-purple-200 to-pink-200 rounded-lg flex items-center justify-center">
-                <p className="text-gray-600 text-center px-4">Debut profesional - Marzo 2015</p>
+              <div className="lg:w-1/2 h-80 rounded-lg overflow-hidden">
+                <img src="/lovable-uploads/2c5b8473-f381-4c0c-8d88-30f60f9122eb.png" alt="Denis Vela mostrando su camiseta profesional número 10" className="w-full h-full object-cover" />
               </div>
             </div>
 
