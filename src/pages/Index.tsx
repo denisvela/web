@@ -5,8 +5,10 @@ import { Badge } from "@/components/ui/badge";
 import { Star, Trophy, Users, ChevronDown, Menu, X, Youtube, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -16,7 +18,9 @@ const Index = () => {
     }
     setIsMenuOpen(false);
   };
-  return <div className="min-h-screen bg-gray-900 text-white">
+
+  return (
+    <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section - Inicio */}
       <section id="inicio" className="relative flex h-screen items-center justify-center text-center" style={{
       background: "url('https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/467553662_977425757763534_5921363224878748512_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lneuUP4uw0kQ7kNvwF4FSFF&_nc_oc=AdmPayt2S5iOKS7KNeNJ1To3VFVL9xSsxUtdhliEB1NtvZa2VBbReKl1yORYpt16_1A&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=vB4tE_gt51yjM0QB-TMntA&oh=00_AfK0XUAyBfcffa_bQ1bUE8rUOX2Oci_IJeHnP6qxXNgyug&oe=68464DF1') center/cover no-repeat"
@@ -62,7 +66,7 @@ const Index = () => {
           <div className="flex justify-center">
             <div className="w-full max-w-4xl float-gentle float-delay-1">
               <div className="relative aspect-video">
-                <iframe src="https://www.youtube.com/embed/4XJFU3kNrDA" title="Denis Vela - Highlights" className="absolute inset-0 w-full h-full rounded-lg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Ci1BlD7N-Hw" title="Denis Vela - Highlights" className="absolute inset-0 w-full h-full rounded-lg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
           </div>
@@ -221,6 +225,8 @@ const Index = () => {
       <button onClick={() => scrollToSection('inicio')} className="fixed bottom-8 right-8 bg-green-600 hover:bg-green-700 text-white p-3 rounded-full shadow-lg transition-all hover:scale-110 z-40">
         <ChevronDown className="w-6 h-6 rotate-180" />
       </button>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
