@@ -23,7 +23,7 @@ const Index = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section - Inicio */}
       <section id="inicio" className="relative flex h-screen items-center justify-center text-center" style={{
-      background: "url('https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/467553662_977425757763534_5921363224878748512_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=lneuUP4uw0kQ7kNvwF4FSFF&_nc_oc=AdmPayt2S5iOKS7KNeNJ1To3VFVL9xSsxUtdhliEB1NtvZa2VBbReKl1yORYpt16_1A&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=vB4tE_gt51yjM0QB-TMntA&oh=00_AfK0XUAyBfcffa_bQ1bUE8rUOX2Oci_IJeHnP6qxXNgyug&oe=68464DF1') center/cover no-repeat"
+      background: "url('/images/denis-historia-bg.jpg') center/cover no-repeat"
     }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 max-w-4xl px-6 float-animation">
