@@ -81,7 +81,7 @@ const Historia = () => {
                 </Card>
               </div>
               <div className="lg:w-1/2 h-80 rounded-lg overflow-hidden mx-[65px] my-px py-0 px-[12px]">
-                <img src="/lovable-uploads/f98e3e1b-97f7-40d3-8f07-3d356efd28f5.png" alt="Denis Vela en sus primeros pasos profesionales" className="w-full h-full object-cover" />
+                <img src="/images/denis-primeros-pasos.gif" alt="Denis Vela en sus primeros pasos profesionales" className="w-full h-full object-cover" />
               </div>
             </div>
 
